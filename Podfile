@@ -11,8 +11,6 @@ source 'https://cdn.cocoapods.org/'
 pod 'blurhash', podspec: './ThirdParty/blurhash.podspec'
 pod 'SwiftProtobuf', "1.36.1"
 
-# ENV['LIBSIGNAL_FFI_PREBUILD_CHECKSUM'] = 'c478b8d77ff39fcaaa6698b7e353bc7c3f04d25f100ae304843db3d963cef6d5'
-# pod 'LibSignalClient', git: 'https://github.com/signalapp/libsignal.git', tag: 'v0.91.0', testspecs: ["Tests"]
 pod 'LibSignalClient', path: '../libsignal', testspecs: ["Tests"]
 
 ENV['RINGRTC_PREBUILD_CHECKSUM'] = '89b51ec3e563cdabb96bb626f5af704ec2e26177bdff44970f2c0bcd76b5b0e2'
@@ -91,6 +89,12 @@ end
 post_install do |installer|
   enable_strip(installer)
   enable_extension_support_for_purelayout(installer)
+  # Reachability imports a private IPv6 header already provided by <netinet/in.h>.
+  # Compile this Objective-C pod with textual headers on newer Apple SDKs.
+  reachability = installer.pods_project.targets.find { |target| target.name == "Reachability" }
+  reachability.build_configurations.each do |config|
+    config.build_settings["CLANG_ENABLE_MODULES"] = "NO"
+  end
   configure_warning_flags(installer)
   configure_testable_build(installer)
   promote_minimum_supported_version(installer)
@@ -101,7 +105,7 @@ post_install do |installer|
   disable_non_development_pod_warnings(installer)
   fix_ringrtc_project_symlink(installer)
   fetch_ringrtc
-  copy_acknowledgements
+  copy_acknowledgements(installer)
 end
 
 # Works around CocoaPods behavior designed for static libraries.
@@ -249,7 +253,7 @@ def fetch_ringrtc
   `make fetch-ringrtc`
 end
 
-def copy_acknowledgements
+def copy_acknowledgements(installer)
   targets = [
     'Signal',
     'SignalNSE',
@@ -263,7 +267,7 @@ def copy_acknowledgements
   acknowledgements_files = targets.map do |target|
     "Pods/Target Support Files/Pods-#{target}/Pods-#{target}-acknowledgements.plist"
   end
-  acknowledgements_files << "Pods/LibSignalClient/acknowledgments/acknowledgments-ios.plist"
+  acknowledgements_files << installer.sandbox.pod_dir('LibSignalClient').join('acknowledgments/acknowledgments-ios.plist').to_s
   acknowledgements_files << "Pods/SignalRingRTC/acknowledgments/acknowledgments.plist"
   acknowledgements_files << "Pods/SignalRingRTC/out/release/acknowledgments-webrtc-ios.plist"
 

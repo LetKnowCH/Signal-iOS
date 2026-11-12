@@ -1,39 +1,40 @@
 # Building
 
-We typically develop against the latest stable version of Xcode.
+The project specifies Xcode 26.3 in `.xcode-version`.
 
 ## 1. Clone
 
 Clone the repo to a working directory:
 
 ```
-git clone --recurse-submodules https://github.com/signalapp/Signal-iOS
+git clone --branch dev --recurse-submodules https://github.com/LetKnowCH/Signal-iOS.git
 ```
 
 Since we make use of sub-modules, you must use `git clone`, rather than
 downloading a prepared zip file from Github.
 
-We recommend you fork the repo on GitHub, then clone your fork:
-
-```
-git clone --recurse-submodules https://github.com/<USERNAME>/Signal-iOS.git
-```
-
-You can then add the Signal repo to sync with upstream changes:
-
-```
-git remote add upstream https://github.com/signalapp/Signal-iOS
-```
-
 ## 2. Dependencies
 
-To build and configure the libraries Signal uses, just run:
+The app uses CocoaPods 1.16.2 and the LetKnow libsignal checkout at `../libsignal`.
+Run these commands from the iOS repository for a new Apple silicon simulator setup.
+
+```sh
+git clone --branch v0.94.1-letknow.1 https://github.com/LetKnowCH/libsignal.git ../libsignal
+(cd ../libsignal && CARGO_BUILD_TARGET=aarch64-apple-ios-sim swift/build_ffi.sh --release)
+```
+
+If you already have this checkout and its release library for your target, reuse them.
+For a physical iPhone, use `aarch64-apple-ios` as the Cargo target.
+Then install the dependencies from the lockfile.
 
 ```
 make dependencies
 ```
 
 ## 3. Xcode
+
+With Xcode 27.2, install the Metal toolchain with `xcodebuild -downloadComponent MetalToolchain`.
+For local builds with this compiler, copy `Config/User.xcconfig.sample` to `Config/User.xcconfig` to allow Swift warnings.
 
 Open the `Signal.xcworkspace` in Xcode.
 
