@@ -20,6 +20,10 @@ public class TSConstants {
 // prepare a series of commits without accidentally committing the change
 // to the environment.
 #if DEBUG
+        if isUsingLetKnowService {
+            return .staging
+        }
+
         if ProcessInfo.processInfo.environment["USE_STAGING"] == "1" {
             return .staging
         }
