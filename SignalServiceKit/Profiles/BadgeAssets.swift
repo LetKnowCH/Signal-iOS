@@ -94,7 +94,16 @@ public class BadgeAssets {
             return true
         }
 
+//        guard shouldFetch else { return }
+//        OWSFileSystem.ensureDirectoryExists(localAssetDirectory.path)
         guard shouldFetch else { return }
+
+        if TSConstants.isUsingLetKnowService {
+            Logger.info("[LetKnow] Skipping remote badge assets download")
+            lockedState.withLock { $0 = .unavailable }
+            return
+        }
+
         OWSFileSystem.ensureDirectoryExists(localAssetDirectory.path)
         do {
             try await fetchSpritesheetIfNecessary()

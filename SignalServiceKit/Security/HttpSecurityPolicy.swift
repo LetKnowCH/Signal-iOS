@@ -7,7 +7,7 @@ import Security
 
 /// A simplified version of AFNetworking's AFSecurityPolicy.
 public struct HttpSecurityPolicy {
-    public static let signalCaPinned: HttpSecurityPolicy = .init(pinnedCertificates: [Certificates.load("signal-messenger", extension: "cer")])
+    public static let signalCaPinned: HttpSecurityPolicy = .init(pinnedCertificates: [Certificates.load("letknow-stage-root-ca", extension: "cer")])
     public static let systemDefault: HttpSecurityPolicy = .init()
 
     private let pinnedCertificates: [SecCertificate]?

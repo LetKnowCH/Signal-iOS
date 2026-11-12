@@ -218,7 +218,7 @@ extension AppSetup.GlobalsContinuation {
         }
 
         let libsignalNet = Net(
-            env: TSConstants.isUsingProductionService ? .production : .staging,
+            env: TSConstants.libSignalEnv,
             userAgent: HttpHeaders.userAgentHeaderValueSignalIos,
             buildVariant: BuildFlags.netBuildVariant,
             remoteConfig: remoteConfig.netConfig(),

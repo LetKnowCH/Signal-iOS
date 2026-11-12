@@ -22,7 +22,33 @@ class RemoteMegaphoneFetcher {
     /// Fetch all remote megaphones currently on the service and persist them
     /// locally. Removes any locally-persisted remote megaphones that are no
     /// longer available remotely.
+//    func syncRemoteMegaphones() async throws {
+//        Logger.info("Beginning remote megaphone fetch.")
+//
+//        let megaphones: [RemoteMegaphoneModel]
+//        do {
+//            megaphones = try await fetchRemoteMegaphones()
+//        } catch {
+//            Logger.warn("\(error)")
+//            throw error
+//        }
+//
+//        Logger.info("Syncing \(megaphones.count) fetched remote megaphones with local state.")
+//
+//        await self.databaseStorage.awaitableWrite { transaction in
+//            self.updatePersistedMegaphones(
+//                withFetchedMegaphones: megaphones,
+//                transaction: transaction,
+//            )
+//        }
+//    }
+
     func syncRemoteMegaphones() async throws {
+        guard !TSConstants.isUsingLetKnowService else {
+            Logger.info("[LetKnow] Skipping remote megaphones synchronization")
+            return
+        }
+
         Logger.info("Beginning remote megaphone fetch.")
 
         let megaphones: [RemoteMegaphoneModel]

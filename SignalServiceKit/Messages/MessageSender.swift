@@ -33,7 +33,7 @@ public class MessageSender {
             guard let session = try sessionStore.loadSession(forServiceId: serviceId, deviceId: deviceId, tx: tx) else {
                 return nil
             }
-            guard session.hasCurrentState else {
+            guard session.hasCurrentState(requirePqRatio: 0) else {
                 return nil
             }
             return session
@@ -52,6 +52,8 @@ public class MessageSender {
         serviceId: ServiceId,
         deviceId: PreKeyDevice,
         sealedSenderParameters: SealedSenderParameters?,
+        localAci: Aci,
+        localDeviceId: DeviceId,
     ) async throws {
         var preKeyBundle = try await makePreKeyRequest(
             serviceId: serviceId,
@@ -74,7 +76,13 @@ public class MessageSender {
                     throw OWSAssertionError("The server didn't return a bundle for the device we requested.")
                 }
             }
-            try self._createSessions(for: preKeyBundle, serviceId: serviceId, tx: tx)
+            try self._createSessions(
+                for: preKeyBundle,
+                serviceId: serviceId,
+                localAci: localAci,
+                localDeviceId: localDeviceId,
+                tx: tx
+            )
         }
     }
 
@@ -144,12 +152,21 @@ public class MessageSender {
     private func _createSessions(
         for preKeyBundle: SignalServiceKit.PreKeyBundle,
         serviceId: ServiceId,
+        localAci: Aci,
+        localDeviceId: DeviceId,
         tx: DBWriteTransaction,
     ) throws {
         assert(!Thread.isMainThread)
 
         for deviceBundle in preKeyBundle.devices {
-            try _createSession(for: deviceBundle, serviceId: serviceId, identityKey: preKeyBundle.identityKey, tx: tx)
+            try _createSession(
+                for: deviceBundle,
+                serviceId: serviceId,
+                identityKey: preKeyBundle.identityKey,
+                localAci: localAci,
+                localDeviceId: localDeviceId,
+                tx: tx
+            )
         }
     }
 
@@ -157,6 +174,8 @@ public class MessageSender {
         for deviceBundle: SignalServiceKit.PreKeyBundle.PreKeyDeviceBundle,
         serviceId: ServiceId,
         identityKey: IdentityKey,
+        localAci: Aci,
+        localDeviceId: DeviceId,
         tx transaction: DBWriteTransaction,
     ) throws {
         let deviceId = deviceBundle.deviceId
@@ -200,12 +219,19 @@ public class MessageSender {
         do {
             let identityManager = DependenciesBridge.shared.identityManager
             let protocolAddress = ProtocolAddress(serviceId, deviceId: deviceId.uint32Value)
+            let ourAddress = ProtocolAddress(localAci, deviceId: localDeviceId)
             try processPreKeyBundle(
                 bundle,
                 for: protocolAddress,
-                sessionStore: DependenciesBridge.shared.signalProtocolStoreManager.signalProtocolStore(for: .aci).sessionStore,
-                identityStore: identityManager.libSignalStore(for: .aci, tx: transaction),
-                context: transaction,
+                ourAddress: ourAddress,
+                sessionStore: DependenciesBridge.shared.signalProtocolStoreManager
+                    .signalProtocolStore(for: .aci)
+                    .sessionStore,
+                identityStore: identityManager.libSignalStore(
+                    for: .aci,
+                    tx: transaction
+                ),
+                context: transaction
             )
         } catch SignalError.untrustedIdentity(_), IdentityManagerError.identityKeyMismatchForOutgoingMessage {
             Logger.warn("Found untrusted identity for \(serviceId)")
@@ -1524,6 +1550,8 @@ public class MessageSender {
                         serviceId: serviceId,
                         deviceId: .all,
                         sealedSenderParameters: sealedSenderParameters,
+                        localAci: localAci,
+                        localDeviceId: localDeviceId,
                     )
                 } catch where error.httpStatusCode == 404 {
                     try await handle404(serviceId: serviceId, isSelfSend: isSelfSend)
@@ -1537,6 +1565,8 @@ public class MessageSender {
                                     serviceId: serviceId,
                                     deviceId: .specific(deviceId),
                                     sealedSenderParameters: sealedSenderParameters,
+                                    localAci: localAci,
+                                    localDeviceId: localDeviceId,
                                 )
                             } catch where error.httpStatusCode == 404 {
                                 // If we have an invalid device exception, remove this device from the

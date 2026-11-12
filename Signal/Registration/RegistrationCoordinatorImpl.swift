@@ -3159,10 +3159,24 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
         func tryNonImmediatePushChallenge() async -> RegistrationStep {
             // Our third choice: a captcha challenge
             if requestsCaptchaChallenge {
-                logger.info("Showing the CAPTCHA challenge to the user")
                 db.write { transaction in
-                    SupportKeyValueStore().setLastChallengeDate(value: Date(), transaction: transaction)
+                    SupportKeyValueStore().setLastChallengeDate(
+                        value: Date(),
+                        transaction: transaction
+                    )
                 }
+
+                if TSConstants.isUsingLetKnowService {
+                    logger.info("Automatically fulfilling LetKnow CAPTCHA challenge")
+
+                    return await submit(
+                        challengeFulfillment: .captcha("noop.noop.registration.test"),
+                        for: session,
+                        failureCount: 0,
+                    )
+                }
+
+                logger.info("Showing the CAPTCHA challenge to the user")
                 return .captchaChallenge
             }
 

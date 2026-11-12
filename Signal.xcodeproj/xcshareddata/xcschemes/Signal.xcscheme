@@ -145,7 +145,7 @@
          <EnvironmentVariable
             key = "USE_STAGING"
             value = "1"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "UBSAN_OPTIONS"
@@ -165,6 +165,21 @@
          <EnvironmentVariable
             key = "RINGRTC_MAX_LOG_LEVEL"
             value = "2"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "CFNETWORK_DIAGNOSTICS"
+            value = "3"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "LETKNOW_DIAG_TLS13"
+            value = "1"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "LETKNOW_DIAG_URLSESSION"
+            value = "1"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
