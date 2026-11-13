@@ -15,8 +15,10 @@ protocol AttachmentKeyboardDelegate: AnyObject {
     func didTapContact()
     func didTapLocation()
     func didTapPayment()
+    func didTapWalletTransfer()
     func didTapPoll()
     var isGroup: Bool { get }
+    var canOpenWalletTransfer: Bool { get }
 }
 
 class AttachmentKeyboard: CustomKeyboard {
@@ -30,7 +32,7 @@ class AttachmentKeyboard: CustomKeyboard {
     }()
 
     private lazy var attachmentFormatPickerView: AttachmentFormatPickerView = {
-        let pickerView = AttachmentFormatPickerView(isGroup: delegate?.isGroup ?? false)
+        let pickerView = AttachmentFormatPickerView(isGroup: delegate?.isGroup ?? false, canOpenWalletTransfer: delegate?.canOpenWalletTransfer ?? false)
         pickerView.attachmentFormatPickerDelegate = self
         pickerView.setContentHuggingVerticalHigh()
         pickerView.setCompressionResistanceVerticalHigh()
@@ -151,6 +153,10 @@ extension AttachmentKeyboard: AttachmentFormatPickerDelegate {
 
     func didTapPayment() {
         delegate?.didTapPayment()
+    }
+
+    func didTapWalletTransfer() {
+        delegate?.didTapWalletTransfer()
     }
 
     func didTapPoll() {

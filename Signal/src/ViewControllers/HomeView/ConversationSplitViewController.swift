@@ -52,6 +52,8 @@ class ConversationSplitViewController: UISplitViewController, ConversationSplit 
             chatListNavController
         case .calls:
             callsListNavController
+        case .wallet:
+            homeVC.walletNavController
         case .stories:
             storiesNavController
         }
