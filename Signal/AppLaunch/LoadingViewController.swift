@@ -27,7 +27,7 @@ class LoadingViewController: UIViewController {
         self.view = UIView()
         view.backgroundColor = Theme.launchScreenBackgroundColor
 
-        self.logoView = UIImageView(image: #imageLiteral(resourceName: "signal-logo-128-launch-screen"))
+        self.logoView = UIImageView(image: #imageLiteral(resourceName: "letknow-launch-logo"))
         view.addSubview(logoView)
 
         logoView.autoCenterInSuperview()

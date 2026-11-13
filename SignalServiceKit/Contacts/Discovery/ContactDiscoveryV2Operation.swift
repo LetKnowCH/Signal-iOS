@@ -1,4 +1,3 @@
-//
 // Copyright 2022 Signal Messenger, LLC
 // SPDX-License-Identifier: AGPL-3.0-only
 //
@@ -30,6 +29,29 @@ protocol ContactDiscoveryV2PersistentState {
     ///
     /// The next call to `load()` will return `nil`.
     func reset() async
+
+    /// Persist a Nitro token together with the updated set of previously queried numbers.
+    /// Default implementation supports existing test doubles when no numbers are discarded.
+    func save(
+        newToken: Data,
+        clearE164s: Bool,
+        newE164s: Set<E164>,
+        discardedE164s: Set<E164>
+    ) async throws
+}
+
+extension ContactDiscoveryV2PersistentState {
+    func save(
+        newToken: Data,
+        clearE164s: Bool,
+        newE164s: Set<E164>,
+        discardedE164s: Set<E164>
+    ) async throws {
+        guard discardedE164s.isEmpty else {
+            throw OWSAssertionError("CDSI persistent state does not support discarding numbers")
+        }
+        try await save(newToken: newToken, clearE164s: clearE164s, newE164s: newE164s)
+    }
 }
 
 // MARK: -
@@ -141,6 +163,21 @@ final class ContactDiscoveryV2Operation<ConnectionType: ContactDiscoveryConnecti
         do {
             let cdsiAuth = try await self.remoteAttestation.authForCDSI()
             let request = try self.buildRequest()
+
+            // Only production Net connections use LetKnow Nitro. Test connections retain their mocks.
+            if TSConstants.isUsingLetKnowService,
+               ConnectionType.self == LibSignalClient.Net.self {
+                // The approved Nitro PCR policy is for Stage only; never silently use Stage in Release.
+                guard !TSConstants.isUsingProductionService else {
+                    throw ContactDiscoveryError.terminalError("LetKnow production Nitro policy is not configured")
+                }
+                return try await performLetKnowLookup(
+                    client: NitroContactDiscovery.letKnowStage(),
+                    request: request,
+                    username: cdsiAuth.username,
+                    password: cdsiAuth.password
+                )
+            }
             let auth = LibSignalClient.Auth(username: cdsiAuth.username, password: cdsiAuth.password)
             let tokenResult = try await self.connectionImpl.performRequest(request, auth: auth)
             // We need to persist the token & new e164s before dealing with the result.
@@ -156,6 +193,78 @@ final class ContactDiscoveryV2Operation<ConnectionType: ContactDiscoveryConnecti
             Logger.warn("CDSv2: Failed with error: \(resolvedError)")
             throw resolvedError
         }
+    }
+
+    // MARK: - LetKnow Nitro CDSI
+
+    private func performLetKnowLookup(
+        client: NitroContactDiscovery,
+        request: ContactDiscoveryLookupRequest,
+        username: String,
+        password: String
+    ) async throws -> [ContactDiscoveryResult] {
+        // Nitro requires at least one queried number. An empty address book needs no network request.
+        guard !e164sToLookup.isEmpty else {
+            return []
+        }
+
+        // The token describes all previously queried numbers, including numbers now removed.
+        let retainedE164s = request.prevE164s.intersection(e164sToLookup)
+        let discardedE164s = request.prevE164s.subtracting(e164sToLookup)
+
+        let aciUakPairs = db.read { tx in
+            udManager.fetchAllAciUakPairs(tx: tx)
+        }
+        let accessKeys = try aciUakPairs.map { aci, uak in
+            guard let uuid = UUID(uuidString: aci.serviceIdString) else {
+                throw OWSAssertionError("Malformed ACI in CDSI access-key list")
+            }
+            return try NitroContactDiscovery.AccessKey(aci: uuid, key: uak.keyData)
+        }
+
+        let tokenWriter = LetKnowContactDiscoveryTokenWriter(
+            persistentState: persistentState,
+            initialRequestHadToken: request.token != nil,
+            newE164s: request.newE164s,
+            discardedE164s: discardedE164s
+        )
+
+        let response = try await client.lookup(
+            username: username,
+            password: password,
+            newE164s: try request.newE164s.map(Self.numericE164).sorted(),
+            previousE164s: try retainedE164s.map(Self.numericE164).sorted(),
+            discardE164s: try discardedE164s.map(Self.numericE164).sorted(),
+            accessKeys: accessKeys,
+            token: request.token ?? Data(),
+            onToken: { token in
+                // This write must finish before Nitro acknowledges the token to the server.
+                try await tokenWriter.save(token)
+            }
+        )
+
+        Logger.info("CDSv2: Consumed \(response.permitsUsed) tokens (LetKnow Nitro)")
+        return try response.records.compactMap { record in
+            guard let pniUUID = record.pni else {
+                return nil
+            }
+            guard let e164 = E164("+\(record.e164)") else {
+                throw OWSAssertionError("Malformed E164 in Nitro CDSI response")
+            }
+            return ContactDiscoveryResult(
+                e164: e164,
+                pni: Pni(fromUUID: pniUUID),
+                aci: record.aci.map { Aci(fromUUID: $0) }
+            )
+        }
+    }
+
+    private static func numericE164(_ value: E164) throws -> UInt64 {
+        let stringValue = value.stringValue
+        guard stringValue.first == "+", let number = UInt64(stringValue.dropFirst()) else {
+            throw OWSAssertionError("Invalid E164 passed to Nitro CDSI")
+        }
+        return number
     }
 
     // MARK: - Request/Response
@@ -205,10 +314,28 @@ final class ContactDiscoveryV2Operation<ConnectionType: ContactDiscoveryConnecti
 
     private func handle(error: Error) async -> Error {
         switch error {
+        case let failure as NitroContactDiscovery.Failure:
+            return await handle(nitroFailure: failure)
         case let libSignalError as LibSignalClient.SignalError:
             return await handle(libSignalError: libSignalError)
+        case let urlError as URLError:
+            return ContactDiscoveryError.retryableError("CDSI transport error: \(urlError.code)")
         default:
             return error
+        }
+    }
+
+    private func handle(nitroFailure: NitroContactDiscovery.Failure) async -> ContactDiscoveryError {
+        switch nitroFailure {
+        case .invalidToken:
+            await persistentState?.reset()
+            return .invalidToken
+        case .unauthorized:
+            return .terminalError("LetKnow CDSI authentication rejected")
+        case .rateLimited(retryAfterSeconds: let seconds):
+            return .rateLimit(retryAfter: Date(timeIntervalSinceNow: TimeInterval(seconds)))
+        case .unavailable:
+            return .retryableError("LetKnow CDSI temporarily unavailable")
         }
     }
 
@@ -294,6 +421,20 @@ private class ContactDiscoveryV2PersistentStateImpl: ContactDiscoveryV2Persisten
     }
 
     func save(newToken: Data, clearE164s: Bool, newE164s: Set<E164>) async throws {
+        try await save(
+            newToken: newToken,
+            clearE164s: clearE164s,
+            newE164s: newE164s,
+            discardedE164s: []
+        )
+    }
+
+    func save(
+        newToken: Data,
+        clearE164s: Bool,
+        newE164s: Set<E164>,
+        discardedE164s: Set<E164>
+    ) async throws {
         try await SSKEnvironment.shared.databaseStorageRef.awaitableWrite { transaction in
             let database = transaction.database
 
@@ -305,6 +446,13 @@ private class ContactDiscoveryV2PersistentStateImpl: ContactDiscoveryV2Persisten
             if clearE164s {
                 try CdsPreviousE164.deleteAll(database)
                 Logger.info("CDSv2: Clearing all CdsE164s")
+            }
+
+            for discardedE164 in discardedE164s {
+                try database.execute(
+                    sql: "DELETE FROM CdsPreviousE164 WHERE e164 = ?",
+                    arguments: [discardedE164.stringValue]
+                )
             }
 
             for newE164 in newE164s {
@@ -344,5 +492,35 @@ class _ContactDiscoveryV2Operation_RemoteAttestationWrapper: _ContactDiscoveryV2
 
     func authForCDSI() async throws -> RemoteAttestation.Auth {
         return try await RemoteAttestation.authForCDSI()
+    }
+}
+
+/// Bridges Nitro's @Sendable token callback to Signal's existing transaction-backed CDSI state.
+/// All stored fields are immutable; the only operation is an awaited database transaction.
+private final class LetKnowContactDiscoveryTokenWriter: @unchecked Sendable {
+    private let persistentState: (any ContactDiscoveryV2PersistentState)?
+    private let initialRequestHadToken: Bool
+    private let newE164s: Set<E164>
+    private let discardedE164s: Set<E164>
+
+    init(
+        persistentState: (any ContactDiscoveryV2PersistentState)?,
+        initialRequestHadToken: Bool,
+        newE164s: Set<E164>,
+        discardedE164s: Set<E164>
+    ) {
+        self.persistentState = persistentState
+        self.initialRequestHadToken = initialRequestHadToken
+        self.newE164s = newE164s
+        self.discardedE164s = discardedE164s
+    }
+
+    func save(_ token: Data) async throws {
+        try await persistentState?.save(
+            newToken: token,
+            clearE164s: !initialRequestHadToken,
+            newE164s: newE164s,
+            discardedE164s: discardedE164s
+        )
     }
 }

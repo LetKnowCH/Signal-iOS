@@ -63,6 +63,7 @@ class RegistrationCaptchaViewController: OWSViewController {
 
 extension RegistrationCaptchaViewController: CaptchaViewDelegate {
     func captchaView(_: CaptchaView, didCompleteCaptchaWithToken token: String) {
+        guard navigationController?.topViewController === self else { return }
         presenter?.submitCaptcha(token)
     }
 
