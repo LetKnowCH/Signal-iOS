@@ -8,6 +8,7 @@ import LibSignalClient
 public import Photos
 public import SignalServiceKit
 public import SignalUI
+import SwiftUI
 import UniformTypeIdentifiers
 
 extension ConversationViewController: ConversationInputToolbarDelegate {
@@ -501,6 +502,39 @@ extension ConversationViewController: ConversationInputToolbarDelegate {
         navigationController.presentationController?.delegate = self
         dismissKeyBoard()
         presentFormSheet(navigationController, animated: true)
+    }
+
+    var canOpenWalletTransfer: Bool {
+        guard TSConstants.isUsingLetKnowService, let contact = thread as? TSContactThread else { return false }
+        return !contact.contactAddress.isLocalAddress && contact.contactAddress.aci != nil && !isBlockedConversation()
+    }
+
+    func walletTransferButtonPressed() {
+        guard let contact = thread as? TSContactThread, let aci = contact.contactAddress.aci,
+              !contact.contactAddress.isLocalAddress, !isBlockedConversation() else { return }
+        view.endEditing(true)
+        let wallet = MerchantWalletView(chatName: threadViewModel.name, chatPhone: contact.contactAddress.phoneNumber,
+                                   chatACI: aci.serviceIdString) { [weak self] text in
+            guard let self, let navigation = navigationController,
+                  let screen = navigation.topViewController as? UIHostingController<MerchantWalletView>,
+                  navigation.viewControllers.dropLast().last === self,
+                  !isBlockedConversation() else { return false }
+
+            let confirmed = await showSafetyNumberConfirmationIfNecessary(
+                from: screen,
+                confirmationText: SafetyNumberStrings.confirmSendButton,
+                untrustedThreshold: Date().addingTimeInterval(-OWSIdentityManagerImpl.Constants.defaultUntrustedInterval),
+            )
+            guard confirmed, navigation.topViewController === screen, !isBlockedConversation() else { return false }
+
+            _ = ThreadUtil.addThreadToProfileWhitelistIfEmptyOrPendingRequestAndSetDefaultTimerWithSneakyTransaction(thread)
+            ThreadUtil.enqueueMessage(body: MessageBody(text: text, ranges: .empty), thread: thread, linkPreviewDraft: nil) {
+                self.loadCoordinator.enqueueReload()
+            }
+            navigation.popViewController(animated: true)
+            return true
+        }
+        navigationController?.pushViewController(UIHostingController(rootView: wallet), animated: true)
     }
 
     public func paymentButtonPressed() {

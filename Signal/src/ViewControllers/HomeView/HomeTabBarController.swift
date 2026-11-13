@@ -6,13 +6,17 @@
 public import Foundation
 import SignalServiceKit
 import SignalUI
+import SwiftUI
 public import UIKit
 
 class HomeTabBarController: UITabBarController {
 
     private let appReadiness: AppReadinessSetter
 
-    init(appReadiness: AppReadinessSetter) {
+    private let badgeManager: BadgeManager
+
+    init(appReadiness: AppReadinessSetter, badgeManager: BadgeManager = AppEnvironment.shared.badgeManager) {
+        self.badgeManager = badgeManager
         self.appReadiness = appReadiness
         super.init(nibName: nil, bundle: nil)
     }
@@ -26,6 +30,7 @@ class HomeTabBarController: UITabBarController {
         case chatList = 0
         case calls = 1
         case stories = 2
+        case wallet
 
         var title: String {
             switch self {
@@ -39,6 +44,8 @@ class HomeTabBarController: UITabBarController {
                     "CALLS_LIST_TITLE",
                     comment: "Title for the calls list view.",
                 )
+            case .wallet:
+                return "Wallet"
             case .stories:
                 return OWSLocalizedString(
                     "STORIES_TITLE",
@@ -53,6 +60,8 @@ class HomeTabBarController: UITabBarController {
                 return UIImage(imageLiteralResourceName: "tab-chats")
             case .calls:
                 return UIImage(named: "tab-calls")
+            case .wallet:
+                return UIImage(systemName: "wallet.pass")
             case .stories:
                 return UIImage(named: "tab-stories")
             }
@@ -64,6 +73,8 @@ class HomeTabBarController: UITabBarController {
                 return UIImage(named: "tab-chats")
             case .calls:
                 return UIImage(named: "tab-calls")
+            case .wallet:
+                return UIImage(systemName: "wallet.pass.fill")
             case .stories:
                 return UIImage(named: "tab-stories")
             }
@@ -83,11 +94,31 @@ class HomeTabBarController: UITabBarController {
                 return "chats"
             case .calls:
                 return "calls"
+            case .wallet:
+                return "wallet"
             case .stories:
                 return "stories"
             }
         }
     }
+
+    private var walletHidesTabBar = false
+    private var displayedTabs: [Tabs] = []
+
+    lazy var walletNavController = OWSNavigationController(rootViewController: UIHostingController(rootView:
+        MerchantWalletView(
+            closeWallet: { [weak self] in self?.selectedHomeTab = .chatList },
+            walletTabVisible: { [weak self] visible in self?.updateWalletNavigation(visible) }
+        )
+    ))
+
+    private func updateWalletNavigation(_ visible: Bool) {
+        guard walletHidesTabBar != visible, selectedHomeTab == .wallet else { return }
+        walletHidesTabBar = visible
+        setTabBarHidden(visible, animated: false)
+    }
+
+    lazy var walletTabBarItem = Tabs.wallet.tabBarItem
 
     lazy var chatListViewController = ChatListViewController(chatListMode: .inbox, appReadiness: appReadiness)
     lazy var chatListNavController = OWSNavigationController(rootViewController: chatListViewController)
@@ -128,8 +159,13 @@ class HomeTabBarController: UITabBarController {
     }
 
     var selectedHomeTab: Tabs {
-        get { Tabs(rawValue: selectedIndex) ?? .chatList }
-        set { selectedIndex = newValue.rawValue }
+        get {
+            displayedTabs[safe: selectedIndex] ?? .chatList
+        }
+        set {
+            if newValue != .wallet { updateWalletNavigation(false) }
+            selectedViewController = childControllers(for: newValue).navigationController
+        }
     }
 
     var owsTabBar: OWSTabBar? {
@@ -155,7 +191,7 @@ class HomeTabBarController: UITabBarController {
 
         updateTabBars(areStoriesEnabled: areStoriesEnabled)
 
-        AppEnvironment.shared.badgeManager.addObserver(self)
+        badgeManager.addObserver(self)
         storyBadgeCountManager.beginObserving(observer: self)
 
         setTabBarHidden(false, animated: false)
@@ -175,6 +211,8 @@ class HomeTabBarController: UITabBarController {
 
     private func updateTabBars(areStoriesEnabled: Bool) {
         let newTabs = tabsToShow(areStoriesEnabled: areStoriesEnabled)
+        updateWalletNavigation(false)
+        displayedTabs = newTabs
         if #available(iOS 18, *), UIDevice.current.isIPad {
             self.tabs = newTabs.map(uiTab(for:))
         } else {
@@ -207,6 +245,8 @@ class HomeTabBarController: UITabBarController {
             return (chatListNavController, chatListTabBarItem)
         case .calls:
             return (callsListNavController, callsListTabBarItem)
+        case .wallet:
+            return (walletNavController, walletTabBarItem)
         case .stories:
             return (storiesNavController, storiesTabBarItem)
         }
@@ -217,6 +257,7 @@ class HomeTabBarController: UITabBarController {
         if areStoriesEnabled {
             tabs.append(Tabs.stories)
         }
+        if TSConstants.isUsingLetKnowService { tabs.append(.wallet) }
         return tabs
     }
 
@@ -353,6 +394,9 @@ extension HomeTabBarController: UITabBarControllerDelegate {
         if selectedViewController == viewController {
             let tableView: UITableView
             switch selectedHomeTab {
+            case .wallet:
+                walletNavController.popToRootViewController(animated: true)
+                return true
             case .chatList:
                 tableView = chatListViewController.tableView
             case .stories:

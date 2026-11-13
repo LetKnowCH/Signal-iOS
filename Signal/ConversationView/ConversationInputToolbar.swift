@@ -57,6 +57,8 @@ protocol ConversationInputToolbarDelegate: AnyObject {
 
     func locationButtonPressed()
 
+    var canOpenWalletTransfer: Bool { get }
+    func walletTransferButtonPressed()
     func paymentButtonPressed()
 
     func pollButtonPressed()
@@ -3289,6 +3291,10 @@ extension ConversationInputToolbar: AttachmentKeyboardDelegate {
         inputToolbarDelegate?.locationButtonPressed()
     }
 
+    func didTapWalletTransfer() {
+        inputToolbarDelegate?.walletTransferButtonPressed()
+    }
+
     func didTapPayment() {
         inputToolbarDelegate?.paymentButtonPressed()
     }
@@ -3296,6 +3302,8 @@ extension ConversationInputToolbar: AttachmentKeyboardDelegate {
     func didTapPoll() {
         inputToolbarDelegate?.pollButtonPressed()
     }
+
+    var canOpenWalletTransfer: Bool { inputToolbarDelegate?.canOpenWalletTransfer ?? false }
 
     var isGroup: Bool {
         inputToolbarDelegate?.isGroup() ?? false

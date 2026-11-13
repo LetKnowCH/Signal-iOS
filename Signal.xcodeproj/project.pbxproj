@@ -134,6 +134,7 @@
 		05A180362CD1840F00579FA4 /* UIViewPropertyAnimator+SignalUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A180352CD1840F00579FA4 /* UIViewPropertyAnimator+SignalUI.swift */; };
 		05B411252C62845000A1EDBC /* ChatListInboxFilterSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B411242C62845000A1EDBC /* ChatListInboxFilterSection.swift */; };
 		05FDBC292CD91B31000C87BC /* ChatListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FDBC282CD91B31000C87BC /* ChatListContainerView.swift */; };
+		0942C353839BB53473ECA841 /* MerchantWalletAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5866D37B3956CA4640FE6F08 /* MerchantWalletAPITests.swift */; };
 		0CE014267EDFBD2538E940A0 /* Pods_Signal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF88FB580BC19B240EEB86A /* Pods_Signal.framework */; };
 		1404D8B3276A353B0068E2F6 /* ChatListViewController+Multiselect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404D8B2276A353A0068E2F6 /* ChatListViewController+Multiselect.swift */; };
 		1466AB282817F7E7003B3D9F /* PluralAware.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 1466AB262817F7E7003B3D9F /* PluralAware.stringsdict */; };
@@ -149,6 +150,7 @@
 		17EC850C29133CDB00319C82 /* CancelledGroupRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EC850B29133CDB00319C82 /* CancelledGroupRing.swift */; };
 		259D4DF2486F14DB112B3999 /* Pods_SignalServiceKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DA2BE463493965F5BC71C0 /* Pods_SignalServiceKitTests.framework */; };
 		2B5914CF7BCE3017430CFD84 /* Pods_SignalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BADD293DAFC82BF3274F0F6 /* Pods_SignalTests.framework */; };
+		2E6F1E6F221F5C585826F831 /* MerchantWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D73169288C476125B85F34 /* MerchantWalletView.swift */; };
 		3236FCC42592B67B006D33B9 /* NameCollisionReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3236FCC32592B67B006D33B9 /* NameCollisionReviewCell.swift */; };
 		326DF2612739F4D90017B789 /* FeaturedBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DF2602739F4D90017B789 /* FeaturedBadgeViewController.swift */; };
 		327CF66825ACE7DD00DA0A6F /* GetStartedBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CF66725ACE7DC00DA0A6F /* GetStartedBannerViewController.swift */; };
@@ -871,6 +873,7 @@
 		50F86FC42AFEFEC20045F58B /* TimeGatedBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F86FC32AFEFEC20045F58B /* TimeGatedBatch.swift */; };
 		50F946102AD768AF002EF293 /* MockIdentityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F9460F2AD768AF002EF293 /* MockIdentityManager.swift */; };
 		50FA1B822F2D2935000DDCF9 /* InstalledStickerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA1B812F2D2935000DDCF9 /* InstalledStickerRecord.swift */; };
+		5497BB2DE7EA46F732AA0767 /* MerchantWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A2A16971976F22623E357 /* MerchantWalletModel.swift */; };
 		557238D32F2D53FD0033BC9A /* RingrtcVp9Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557238D22F2D53EF0033BC9A /* RingrtcVp9Config.swift */; };
 		55B753602D97304100CCC91C /* RemoteMuteToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B7535F2D97303A00CCC91C /* RemoteMuteToast.swift */; };
 		55BD355C2F16DAC0008E989C /* input_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5531BE0E2F15B97F002AF66F /* input_video.mp4 */; };
@@ -1331,6 +1334,7 @@
 		66FC638C29E9E9D200F00DAC /* TextCheckingDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FC638B29E9E9D200F00DAC /* TextCheckingDataItem.swift */; };
 		66FC638E29EDABAC00F00DAC /* SearchDisplayConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FC638D29EDABAC00F00DAC /* SearchDisplayConfigurations.swift */; };
 		66FFDADC2C823C270079C0E7 /* BackupArchive+Contexts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FFDADB2C823C270079C0E7 /* BackupArchive+Contexts.swift */; };
+		71D7FDDB6E42908D20A2EE91 /* WalletSendAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB42FBCC0C1E4111ECB5AF /* WalletSendAmount.swift */; };
 		7203F5332D53B53000639949 /* UInt64+SSK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F5322D53B52900639949 /* UInt64+SSK.swift */; };
 		7203F5352D53B83500639949 /* TimeInterval+SSK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203F5342D53B83000639949 /* TimeInterval+SSK.swift */; };
 		720547F22B9C8F9900E2CF2F /* AvatarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883A7FD1269F642F00841DF9 /* AvatarModel.swift */; };
@@ -1536,6 +1540,7 @@
 		76F4B581293ACCD200A7CF2F /* UIKit+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B580293ACCD200A7CF2F /* UIKit+Animations.swift */; };
 		76F958632A09A5AE00B43E63 /* DebugUIDiskUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F958622A09A5AE00B43E63 /* DebugUIDiskUsage.swift */; };
 		76FCCDBC27AB8FBE00BAA7F0 /* MediaControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FCCDBB27AB8FBE00BAA7F0 /* MediaControls.swift */; };
+		8239204874E77B44284E6D70 /* WalletContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B09487586C9AC39B54C6029 /* WalletContacts.swift */; };
 		83B9573927C9A1FA00A678FD /* CaptchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B9573827C9A1FA00A678FD /* CaptchaView.swift */; };
 		8803FF6628EF89B50023574A /* StorySharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FA9528EF7E02007AA1BF /* StorySharingTests.swift */; };
 		8806EF19248DBD7200E764C7 /* NotificationPermissionReminderMegaphone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8806EF18248DBD7200E764C7 /* NotificationPermissionReminderMegaphone.swift */; };
@@ -1724,7 +1729,10 @@
 		88F5D78C2880ABF900CE4D2D /* NewPrivateStoryConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5D78B2880ABF900CE4D2D /* NewPrivateStoryConfirmViewController.swift */; };
 		88F5FA9428EBD4CF007AA1BF /* StorySharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F5FA9228EBD484007AA1BF /* StorySharing.swift */; };
 		88FE237E249C22080041670F /* ConversationViewController+Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FE237D249C22080041670F /* ConversationViewController+Scroll.swift */; };
+		91863E16E7FB41EACF2599F0 /* WalletDepositQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48F00E89CC6D2D92C0388A3 /* WalletDepositQR.swift */; };
 		954AEE6A1DF33E01002E5410 /* ContactsPickerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AEE681DF33D32002E5410 /* ContactsPickerTest.swift */; };
+		9C9A0B8E2385E495B7206267 /* WalletOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183897ACB01ACF49A1E33560 /* WalletOverview.swift */; };
+		9FD9DBDDCEA1D3330A4D3E2B /* WalletOfflineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA8DC7A4A2934BCF61C0EE6 /* WalletOfflineView.swift */; };
 		9FDF89F65C026F8F33FD38C1 /* Pods_SignalShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B85AE8CD37B05A1B144605 /* Pods_SignalShareExtension.framework */; };
 		A10FDF79184FB4BB007FF963 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C87F18181EFCE600C4ACAB /* MediaPlayer.framework */; };
 		A11CD70D17FA230600A2D1B1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11CD70C17FA230600A2D1B1 /* QuartzCore.framework */; };
@@ -1733,6 +1741,8 @@
 		A1A018521805C5E800A052A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11CD70C17FA230600A2D1B1 /* QuartzCore.framework */; };
 		A1A018531805C60D00A052A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D221A091169C9E5E00537ABF /* CoreGraphics.framework */; };
 		A5E7C675248C5443007C949A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E7C673248C5442007C949A /* InfoPlist.strings */; };
+		B0D4177929C671CF74791D7A /* MerchantWalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4839C1635514185C2466122 /* MerchantWalletAPI.swift */; };
+		B34E1EB1F9D23BFE9BF99E26 /* WalletHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4875C997064172F0B13317EF /* WalletHistory.swift */; };
 		B60EDE041A05A01700D73516 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60EDE031A05A01700D73516 /* AudioToolbox.framework */; };
 		B66DBF4A19D5BBC8006EA940 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66DBF4919D5BBC8006EA940 /* Images.xcassets */; };
 		B69CD25119773E79005CE69A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69CD25019773E79005CE69A /* XCTest.framework */; };
@@ -1925,6 +1935,8 @@
 		C1FB9B752B16498C00D51A3B /* ExternalPendingDonationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FB9B742B16498C00D51A3B /* ExternalPendingDonationStore.swift */; };
 		C1FE1F612C80CDC30031860B /* AttachmentBackupThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE1F602C80CDC30031860B /* AttachmentBackupThumbnail.swift */; };
 		C26296B4BDCEDADBDA01DDD2 /* Pods_SignalServiceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948B2FC201146EF3BA459226 /* Pods_SignalServiceKit.framework */; };
+		C3373A35F6AED0748F254CE1 /* WalletOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E20699FFFFFA9B91F1162AF /* WalletOperations.swift */; };
+		C4F4619A45E03886AE8A4378 /* WalletPaymentForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3501B481246DDAA40D7674 /* WalletPaymentForm.swift */; };
 		D202868116DBE0E7009068E9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AEACDB16C426DA00C364C0 /* CFNetwork.framework */; };
 		D202868216DBE0F4009068E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */; };
 		D202868316DBE0FC009068E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2179CFB16BB0B3A0006F3AB /* CoreTelephony.framework */; };
@@ -3489,6 +3501,7 @@
 		E1B628F62CCC59E600C4DC7F /* chat_item_view_once_09.binproto in Resources */ = {isa = PBXBuildFile; fileRef = E1B628CE2CCC59E600C4DC7F /* chat_item_view_once_09.binproto */; };
 		E1C2A54B2A8FCB0D00AEC4DA /* DeleteSystemContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2A54A2A8FCB0D00AEC4DA /* DeleteSystemContactViewController.swift */; };
 		E1D827DA2BDC1F7B0022C1AF /* ReactionBurstManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D827D82BDC1F6B0022C1AF /* ReactionBurstManagerTests.swift */; };
+		E28E6C82B0E485AB3BA07118 /* WalletMerchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEFABAF430574FF4097B920 /* WalletMerchant.swift */; };
 		E44AD4E624E98F440035D7B8 /* PhotoCaptureDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44AD4E524E98F430035D7B8 /* PhotoCaptureDismiss.swift */; };
 		E75DD3E02810CDBD00E32C36 /* SubscriptionModelsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75DD3DF2810CDBD00E32C36 /* SubscriptionModelsTest.swift */; };
 		E7D7C93F28B580AC003F043B /* Bundle+OWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7C93E28B580AC003F043B /* Bundle+OWS.swift */; };
@@ -4288,7 +4301,10 @@
 		05EA61432CC943D200B16D4E /* Project-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		05EA61442CC943DD00B16D4E /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		05FDBC282CD91B31000C87BC /* ChatListContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListContainerView.swift; sourceTree = "<group>"; };
+		0A3501B481246DDAA40D7674 /* WalletPaymentForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletPaymentForm.swift; sourceTree = "<group>"; };
 		0BADD293DAFC82BF3274F0F6 /* Pods_SignalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CEFABAF430574FF4097B920 /* WalletMerchant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletMerchant.swift; sourceTree = "<group>"; };
+		106A2A16971976F22623E357 /* MerchantWalletModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MerchantWalletModel.swift; sourceTree = "<group>"; };
 		1404D8B2276A353A0068E2F6 /* ChatListViewController+Multiselect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatListViewController+Multiselect.swift"; sourceTree = "<group>"; };
 		1466AB272817F7E7003B3D9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = translations/en.lproj/PluralAware.stringsdict; sourceTree = "<group>"; };
 		1466AB292817F7F2003B3D9F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = translations/de.lproj/PluralAware.stringsdict; sourceTree = "<group>"; };
@@ -4317,6 +4333,8 @@
 		1704690B25D4C92B000793D8 /* test-jpg-rotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-jpg-rotated.jpg"; sourceTree = "<group>"; };
 		17E6048F28A17BD200127680 /* ZkGroupIntegrationTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZkGroupIntegrationTest.swift; sourceTree = "<group>"; };
 		17EC850B29133CDB00319C82 /* CancelledGroupRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelledGroupRing.swift; sourceTree = "<group>"; };
+		183897ACB01ACF49A1E33560 /* WalletOverview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletOverview.swift; sourceTree = "<group>"; };
+		1E20699FFFFFA9B91F1162AF /* WalletOperations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletOperations.swift; sourceTree = "<group>"; };
 		299F6904BB7E4C0E2463A169 /* Pods-SignalNSE.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalNSE.app store release.xcconfig"; path = "Target Support Files/Pods-SignalNSE/Pods-SignalNSE.app store release.xcconfig"; sourceTree = "<group>"; };
 		2B0685730953D09782B1F911 /* Pods-SignalShareExtension.profiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalShareExtension.profiling.xcconfig"; path = "Target Support Files/Pods-SignalShareExtension/Pods-SignalShareExtension.profiling.xcconfig"; sourceTree = "<group>"; };
 		2C1CB05FE7FDA3C1F0138D7F /* Pods-SignalServiceKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKitTests.debug.xcconfig"; path = "Target Support Files/Pods-SignalServiceKitTests/Pods-SignalServiceKitTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -4713,6 +4731,7 @@
 		34FC7EEB265834F30046707A /* AvatarBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarBuilder.swift; sourceTree = "<group>"; };
 		34FCCA03264AEDFE00A63EDE /* CustomColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColorViewController.swift; sourceTree = "<group>"; };
 		39B85AE8CD37B05A1B144605 /* Pods_SignalShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D73169288C476125B85F34 /* MerchantWalletView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MerchantWalletView.swift; sourceTree = "<group>"; };
 		44B6CDDFDDD0811DBBC57CD1 /* Pods-SignalTests.profiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalTests.profiling.xcconfig"; path = "Target Support Files/Pods-SignalTests/Pods-SignalTests.profiling.xcconfig"; sourceTree = "<group>"; };
 		4503F1BB20470A5B00CEE724 /* classic-quiet.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "classic-quiet.aifc"; sourceTree = "<group>"; };
 		4503F1BC20470A5B00CEE724 /* classic.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = classic.aifc; sourceTree = "<group>"; };
@@ -4790,6 +4809,7 @@
 		45E7A6A61E71CA7E00D44FB5 /* DisplayableTextFilterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayableTextFilterTest.swift; sourceTree = "<group>"; };
 		45F32C1D205718B000A300D5 /* MediaPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MediaPageViewController.swift; path = Signal/src/ViewControllers/MediaGallery/MediaPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		46A35218397D9FD1709A675C /* Pods-SignalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalUITests.debug.xcconfig"; path = "Target Support Files/Pods-SignalUITests/Pods-SignalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4875C997064172F0B13317EF /* WalletHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletHistory.swift; sourceTree = "<group>"; };
 		4C090A1A210FD9C7001FD7F9 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		4C0CF6F92386295400C9F818 /* tap_to_focus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tap_to_focus.json; sourceTree = "<group>"; };
 		4C1885D1218F8E1C00B67051 /* PhotoGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridViewCell.swift; sourceTree = "<group>"; };
@@ -5141,6 +5161,7 @@
 		557238D22F2D53EF0033BC9A /* RingrtcVp9Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingrtcVp9Config.swift; sourceTree = "<group>"; };
 		55B305CB99EC1478F69D91CF /* Pods-SignalUITests.profiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalUITests.profiling.xcconfig"; path = "Target Support Files/Pods-SignalUITests/Pods-SignalUITests.profiling.xcconfig"; sourceTree = "<group>"; };
 		55B7535F2D97303A00CCC91C /* RemoteMuteToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMuteToast.swift; sourceTree = "<group>"; };
+		5866D37B3956CA4640FE6F08 /* MerchantWalletAPITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MerchantWalletAPITests.swift; sourceTree = "<group>"; };
 		5AA002E52CA2455F002D1CC2 /* SessionStoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStoreTest.swift; sourceTree = "<group>"; };
 		5D6C4583F668E9D733E59B9B /* Pods-SignalServiceKitTests.testable release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKitTests.testable release.xcconfig"; path = "Target Support Files/Pods-SignalServiceKitTests/Pods-SignalServiceKitTests.testable release.xcconfig"; sourceTree = "<group>"; };
 		5F85041386A219C9710EAB41 /* Pods-Signal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signal.debug.xcconfig"; path = "Target Support Files/Pods-Signal/Pods-Signal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -5607,6 +5628,7 @@
 		66FFDADB2C823C270079C0E7 /* BackupArchive+Contexts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackupArchive+Contexts.swift"; sourceTree = "<group>"; };
 		67391FF368D9A60FC8B73F0E /* Pods-Signal.profiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Signal.profiling.xcconfig"; path = "Target Support Files/Pods-Signal/Pods-Signal.profiling.xcconfig"; sourceTree = "<group>"; };
 		675486AB8F0612FF2C717BAE /* Pods_SignalUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B09487586C9AC39B54C6029 /* WalletContacts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletContacts.swift; sourceTree = "<group>"; };
 		6BB92957776B3173894CD3E9 /* Pods-SignalServiceKit.app store release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKit.app store release.xcconfig"; path = "Target Support Files/Pods-SignalServiceKit/Pods-SignalServiceKit.app store release.xcconfig"; sourceTree = "<group>"; };
 		70377AAA1918450100CAF501 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		7203F5322D53B52900639949 /* UInt64+SSK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+SSK.swift"; sourceTree = "<group>"; };
@@ -5974,6 +5996,7 @@
 		88FE237D249C22080041670F /* ConversationViewController+Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConversationViewController+Scroll.swift"; sourceTree = "<group>"; };
 		89BA19AB4B8B1BC811E53717 /* Pods-SignalServiceKit.testable release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKit.testable release.xcconfig"; path = "Target Support Files/Pods-SignalServiceKit/Pods-SignalServiceKit.testable release.xcconfig"; sourceTree = "<group>"; };
 		91DA2BE463493965F5BC71C0 /* Pods_SignalServiceKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalServiceKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FB42FBCC0C1E4111ECB5AF /* WalletSendAmount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletSendAmount.swift; sourceTree = "<group>"; };
 		948B2FC201146EF3BA459226 /* Pods_SignalServiceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalServiceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A685625E25E6F3EE3CC812 /* Pods-SignalUITests.testable release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalUITests.testable release.xcconfig"; path = "Target Support Files/Pods-SignalUITests/Pods-SignalUITests.testable release.xcconfig"; sourceTree = "<group>"; };
 		954AEE681DF33D32002E5410 /* ContactsPickerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsPickerTest.swift; sourceTree = "<group>"; };
@@ -6089,6 +6112,7 @@
 		B9FF37352B9286C6005ADDB8 /* UsernameLinkScanQRCodeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameLinkScanQRCodeSheet.swift; sourceTree = "<group>"; };
 		BA04179298647E71115FA4C1 /* Pods-SignalNSE.testable release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalNSE.testable release.xcconfig"; path = "Target Support Files/Pods-SignalNSE/Pods-SignalNSE.testable release.xcconfig"; sourceTree = "<group>"; };
 		BAD74FE6EBEB10FF3426D809 /* Pods-SignalTests.testable release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalTests.testable release.xcconfig"; path = "Target Support Files/Pods-SignalTests/Pods-SignalTests.testable release.xcconfig"; sourceTree = "<group>"; };
+		BCA8DC7A4A2934BCF61C0EE6 /* WalletOfflineView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletOfflineView.swift; sourceTree = "<group>"; };
 		C100E6812C33087C000C83B8 /* PaymentsFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsFormat.swift; sourceTree = "<group>"; };
 		C10E9FAE2BB778E100A609B9 /* BackupArchiveManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupArchiveManagerMock.swift; sourceTree = "<group>"; };
 		C113994A2CA1B32400D4D90C /* BackupStickerPackDownloadStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupStickerPackDownloadStore.swift; sourceTree = "<group>"; };
@@ -6200,6 +6224,7 @@
 		C1FB9B722B16495D00D51A3B /* DonationSubscriptionLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationSubscriptionLevel.swift; sourceTree = "<group>"; };
 		C1FB9B742B16498C00D51A3B /* ExternalPendingDonationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalPendingDonationStore.swift; sourceTree = "<group>"; };
 		C1FE1F602C80CDC30031860B /* AttachmentBackupThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentBackupThumbnail.swift; sourceTree = "<group>"; };
+		C4839C1635514185C2466122 /* MerchantWalletAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MerchantWalletAPI.swift; sourceTree = "<group>"; };
 		C597942EF64D456BBE9782A2 /* Pods-SignalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalTests.debug.xcconfig"; path = "Target Support Files/Pods-SignalTests/Pods-SignalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2179CFB16BB0B3A0006F3AB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		D2179CFD16BB0B480006F3AB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -7800,6 +7825,7 @@
 		F0C124B626D4788A0031C96F /* NSE-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "NSE-Images.xcassets"; sourceTree = "<group>"; };
 		F0EE4DB526A7AC18001DE4ED /* ContextMenuReactionBarAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuReactionBarAccessory.swift; sourceTree = "<group>"; };
 		F0FB6B1F269E625A00AC2A41 /* ContextMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuController.swift; sourceTree = "<group>"; };
+		F48F00E89CC6D2D92C0388A3 /* WalletDepositQR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WalletDepositQR.swift; sourceTree = "<group>"; };
 		F5C80FA12BE3F29F0028F76D /* RTCIceServerFetcherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCIceServerFetcherTest.swift; sourceTree = "<group>"; };
 		F70CAD4E12CCE311EC60A2C9 /* Pods-SignalServiceKitTests.profiling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalServiceKitTests.profiling.xcconfig"; path = "Target Support Files/Pods-SignalServiceKitTests/Pods-SignalServiceKitTests.profiling.xcconfig"; sourceTree = "<group>"; };
 		F900F2DC27F25AB300431E09 /* DonationReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationReceiptViewController.swift; sourceTree = "<group>"; };
@@ -10972,6 +10998,26 @@
 			path = BodyRanges;
 			sourceTree = "<group>";
 		};
+		6D4E73568C185BB4375EBEB0 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				C4839C1635514185C2466122 /* MerchantWalletAPI.swift */,
+				39D73169288C476125B85F34 /* MerchantWalletView.swift */,
+				4875C997064172F0B13317EF /* WalletHistory.swift */,
+				1E20699FFFFFA9B91F1162AF /* WalletOperations.swift */,
+				183897ACB01ACF49A1E33560 /* WalletOverview.swift */,
+				0A3501B481246DDAA40D7674 /* WalletPaymentForm.swift */,
+				0CEFABAF430574FF4097B920 /* WalletMerchant.swift */,
+				6B09487586C9AC39B54C6029 /* WalletContacts.swift */,
+				92FB42FBCC0C1E4111ECB5AF /* WalletSendAmount.swift */,
+				F48F00E89CC6D2D92C0388A3 /* WalletDepositQR.swift */,
+				BCA8DC7A4A2934BCF61C0EE6 /* WalletOfflineView.swift */,
+				106A2A16971976F22623E357 /* MerchantWalletModel.swift */,
+			);
+			name = Wallet;
+			path = Wallet;
+			sourceTree = "<group>";
+		};
 		720547F12B9C8F5E00E2CF2F /* Avatars */ = {
 			isa = PBXGroup;
 			children = (
@@ -11682,6 +11728,7 @@
 				34BEDB0F21C41E71007B0EAE /* views */,
 				F9B93CDF28E246D900B3F8A0 /* AppDelegateTest.swift */,
 				4C83AC4123C55D9C00D4F2E6 /* SignalBaseTest.swift */,
+				5866D37B3956CA4640FE6F08 /* MerchantWalletAPITests.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -12096,6 +12143,7 @@
 				881FF30623B5B1520023B620 /* Signal-AppStore.entitlements */,
 				B657DDC91911A40500F45B0C /* Signal.entitlements */,
 				7665BC9C2A3A72910060279B /* Symbols.xcassets */,
+				6D4E73568C185BB4375EBEB0 /* Wallet */,
 			);
 			path = Signal;
 			sourceTree = "<group>";
@@ -18822,6 +18870,18 @@
 				45069FC629D3A7C800D0DD14 /* WideMediaTileViewLayout.swift in Sources */,
 				45906C6B29D238560025906D /* WidePhotoCell.swift in Sources */,
 				76616C9D2A266A05005F7001 /* WindowManager.swift in Sources */,
+				B0D4177929C671CF74791D7A /* MerchantWalletAPI.swift in Sources */,
+				2E6F1E6F221F5C585826F831 /* MerchantWalletView.swift in Sources */,
+				B34E1EB1F9D23BFE9BF99E26 /* WalletHistory.swift in Sources */,
+				C3373A35F6AED0748F254CE1 /* WalletOperations.swift in Sources */,
+				9C9A0B8E2385E495B7206267 /* WalletOverview.swift in Sources */,
+				C4F4619A45E03886AE8A4378 /* WalletPaymentForm.swift in Sources */,
+				E28E6C82B0E485AB3BA07118 /* WalletMerchant.swift in Sources */,
+				8239204874E77B44284E6D70 /* WalletContacts.swift in Sources */,
+				71D7FDDB6E42908D20A2EE91 /* WalletSendAmount.swift in Sources */,
+				91863E16E7FB41EACF2599F0 /* WalletDepositQR.swift in Sources */,
+				9FD9DBDDCEA1D3330A4D3E2B /* WalletOfflineView.swift in Sources */,
+				5497BB2DE7EA46F732AA0767 /* MerchantWalletModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -18900,6 +18960,7 @@
 				45A3579827DAAC6A0051CE8B /* UserProfileTest.swift in Sources */,
 				5042EAA3287F96FB00C9B19F /* VisibleBadgeResolverTest.swift in Sources */,
 				17E6049028A17BD300127680 /* ZkGroupIntegrationTest.swift in Sources */,
+				0942C353839BB53473ECA841 /* MerchantWalletAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
