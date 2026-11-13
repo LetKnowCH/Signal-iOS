@@ -126,6 +126,9 @@ class SVR2ClientWrapperImpl: SVR2ClientWrapper {
         utf8NormalizedPin: Data,
         username: String,
     ) throws -> SVR2PinHash {
+        if connection.mrEnclave == .letKnowNitroPin {
+            return try SVR2PinHashImpl(LibSignalClient.PinHash(normalizedPin: utf8NormalizedPin, letKnowNitroUsername: username))
+        }
         let pinHash = try LibSignalClient.PinHash(normalizedPin: utf8NormalizedPin, username: username, mrenclave: connection.mrEnclave.dataValue)
         return SVR2PinHashImpl(pinHash)
     }

@@ -196,13 +196,25 @@ public class OWSSignalService: OWSSignalServiceProtocol {
         configuration: URLSessionConfiguration?,
         maxResponseSize: UInt64?,
     ) -> OWSURLSessionProtocol {
-        return buildUrlSession(
+        let session = buildUrlSession(
             endpoint: endpoint,
             configuration: configuration,
             maxResponseSize: maxResponseSize,
             shouldHandleRemoteDeprecation: signalServiceInfo.shouldHandleRemoteDeprecation,
             onFailureCallback: nil,
         )
+        if TSConstants.isUsingLetKnowService {
+            switch signalServiceInfo.type {
+            case .mainSignalService, .storageService:
+                session.customRedirectHandler = { $0.url?.scheme == "https" ? $0 : nil }
+            case .svr2:
+                // Send recovery credentials only to the configured enclave endpoint.
+                session.allowRedirects = false
+            case .updates, .updates2:
+                break
+            }
+        }
+        return session
     }
 
     private func buildUrlSession(

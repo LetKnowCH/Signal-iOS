@@ -434,7 +434,13 @@ public class RegistrationNavigationController: OWSNavigationController {
                     "REGISTRATION_NETWORK_ERROR_BODY",
                     comment: "A network error occurred during registration, and an error is shown to the user. This is the body on that error sheet.",
                 )
-            case .sessionInvalidated, .genericError:
+            case .sessionInvalidated:
+                title = nil
+                message = OWSLocalizedString(
+                    "REGISTRATION_SESSION_INVALIDATED_BODY",
+                    comment: "Shown when the server no longer recognizes the registration session.",
+                )
+            case .genericError:
                 title = nil
                 message = CommonStrings.somethingWentWrongTryAgainLaterError
             }

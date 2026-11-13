@@ -114,6 +114,26 @@ public class CaptchaView: UIView {
 }
 
 extension CaptchaView: WKNavigationDelegate {
+    public func webView(
+        _ webView: WKWebView,
+        respondTo challenge: URLAuthenticationChallenge,
+    ) async -> (URLSession.AuthChallengeDisposition, URLCredential?) {
+        let space = challenge.protectionSpace
+        guard
+            context == .registration,
+            TSConstants.isUsingLetKnowService,
+            space.host == context.url.host,
+            space.authenticationMethod == NSURLAuthenticationMethodServerTrust,
+            let trust = space.serverTrust
+        else {
+            return (.performDefaultHandling, nil)
+        }
+        guard HttpSecurityPolicy.signalCaPinned.evaluate(serverTrust: trust, domain: space.host) else {
+            return (.cancelAuthenticationChallenge, nil)
+        }
+        return (.useCredential, URLCredential(trust: trust))
+    }
+
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction) async -> WKNavigationActionPolicy {
         guard let url: URL = navigationAction.request.url else {
             owsFailDebug("Missing URL.")
@@ -122,6 +142,9 @@ extension CaptchaView: WKNavigationDelegate {
 
         if url.scheme == "signalcaptcha" {
             parseCaptchaResult(url: url)
+            return .cancel
+        }
+        if url.scheme == "http" {
             return .cancel
         }
 

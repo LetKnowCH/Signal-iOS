@@ -1028,6 +1028,8 @@ class OWSAuthConnectionUsingLibSignal: OWSChatConnectionUsingLibSignal<Authentic
                     if self.connection.isCurrentlyConnecting(token) {
                         self._setRegistrationOverride(false)
                         self.db.write { tx in
+                            // During registration the coordinator handles rejection of its temporary credentials.
+                            guard self.accountManager.registrationState(tx: tx).isRegistered else { return }
                             self.registrationStateChangeManager.setIsDeregisteredOrDelinked(true, tx: tx)
                         }
                     }

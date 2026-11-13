@@ -19,7 +19,8 @@ The app uses CocoaPods 1.16.2 and the LetKnow libsignal checkout at `../libsigna
 Run these commands from the iOS repository for a new Apple silicon simulator setup.
 
 ```sh
-git clone --branch v0.94.1-letknow.1 https://github.com/LetKnowCH/libsignal.git ../libsignal
+git clone --branch feature/ios-pin-recovery https://github.com/LetKnowCH/libsignal.git ../libsignal
+git -C ../libsignal checkout --detach 4a052cf0aa02787992c908ad6ccb80540419d2f3
 (cd ../libsignal && CARGO_BUILD_TARGET=aarch64-apple-ios-sim swift/build_ffi.sh --release)
 ```
 

@@ -7510,6 +7510,9 @@
 /* A network error occurred during registration, and an error is shown to the user. This is the title on that error sheet. */
 "REGISTRATION_NETWORK_ERROR_TITLE" = "Check Connection";
 
+/* Shown when the server no longer recognizes the registration session. */
+"REGISTRATION_SESSION_INVALIDATED_BODY" = "This verification session has ended. Confirm your phone number to request a new code.";
+
 /* Title of button to tap if you do not have a recovery key during registration. */
 "REGISTRATION_NO_BACKUP_KEY_BUTTON_TITLE" = "No Recovery Key?";
 

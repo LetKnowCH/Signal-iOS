@@ -3166,16 +3166,6 @@ public class RegistrationCoordinatorImpl: RegistrationCoordinator {
                     )
                 }
 
-                if TSConstants.isUsingLetKnowService {
-                    logger.info("Automatically fulfilling LetKnow CAPTCHA challenge")
-
-                    return await submit(
-                        challengeFulfillment: .captcha("noop.noop.registration.test"),
-                        for: session,
-                        failureCount: 0,
-                    )
-                }
-
                 logger.info("Showing the CAPTCHA challenge to the user")
                 return .captchaChallenge
             }

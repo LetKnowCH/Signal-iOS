@@ -47,6 +47,7 @@ class SessionStoreTest2: XCTestCase {
         try processPreKeyBundle(
             bob_bundle,
             for: bob_address,
+            ourAddress: ProtocolAddress(Aci.constantForTesting("00000000-0000-4000-8000-000000000001"), deviceId: 1),
             sessionStore: alice_store,
             identityStore: alice_store,
             now: Date(timeIntervalSinceReferenceDate: 0),
@@ -60,7 +61,7 @@ class SessionStoreTest2: XCTestCase {
         // maxUnacknowledgedSessionAge 90 days ago.
 
         let initial_session = try alice_store.loadSession(for: bob_address, context: NullContext())!
-        XCTAssertTrue(initial_session.hasCurrentState(now: Date(timeIntervalSinceReferenceDate: PreKeyManagerImpl.Constants.maxUnacknowledgedSessionAge)))
-        XCTAssertFalse(initial_session.hasCurrentState(now: Date(timeIntervalSinceReferenceDate: PreKeyManagerImpl.Constants.maxUnacknowledgedSessionAge + 1)))
+        XCTAssertTrue(initial_session.hasCurrentState(requirePqRatio: 0, now: Date(timeIntervalSinceReferenceDate: PreKeyManagerImpl.Constants.maxUnacknowledgedSessionAge)))
+        XCTAssertFalse(initial_session.hasCurrentState(requirePqRatio: 0, now: Date(timeIntervalSinceReferenceDate: PreKeyManagerImpl.Constants.maxUnacknowledgedSessionAge + 1)))
     }
 }

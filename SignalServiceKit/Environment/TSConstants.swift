@@ -92,6 +92,8 @@ public class TSConstants {
     }()
 
     public static let libSignalEnv: Net.Environment = {
+        // Both LetKnow configurations use the staging chat service.
+        if isUsingLetKnowService { return .staging }
         switch environment {
         case .production:
             return .production
@@ -142,6 +144,14 @@ public struct MrEnclave: Equatable {
     public let dataValue: Data
     public let stringValue: String
 
+    // This identifies the backup namespace. Libsignal verifies Nitro measurements separately.
+    static let letKnowNitroPin = MrEnclave(serviceIdentifier: "letknow-nitro-pin-v1")
+
+    private init(serviceIdentifier: String) {
+        stringValue = serviceIdentifier
+        dataValue = Data(serviceIdentifier.utf8)
+    }
+
     init(_ stringValue: StaticString) {
         self.stringValue = String(describing: stringValue)
         // This is a constant -- it should never fail to parse.
@@ -168,8 +178,8 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public let storageServiceURL = "https://storage.stage.letknow.info:8444"
     public let sfuURL = "https://calling.stage.letknow.info:8445"
     public let sfuTestURL = "https://calling.stage.letknow.info:8445"
-    public let svr2URL = "wss://svr2.stage.letknow.info:8446/v1/enclave"
-    public let registrationCaptchaURL = "https://signalcaptchas.org/registration/generate.html"
+    public let svr2URL = "wss://svr2.stage.letknow.info:8446"
+    public let registrationCaptchaURL = "https://chat.stage.letknow.info/v1/captcha/registration"
     public let challengeCaptchaURL = "https://signalcaptchas.org/challenge/generate.html"
     public let kUDTrustRoots = ["BauR5nkOg3c57jiVRudkJiH0Jbw7vm5hJ8R9RY6mWOha"]
     public let updatesURL = "https://updates.signal.org"
@@ -185,15 +195,13 @@ public class TSConstantsProduction: TSConstantsProtocol {
     public let storageServiceCensorshipPrefix = "storage"
     public let svr2CensorshipPrefix = "svr2"
 
-    public let svr2Enclave = MrEnclave("1240acbd4aa26974184844c8a46b1022d3957ac8a76c1fd8f5b1a15141ee0708")
+    public let svr2Enclave = MrEnclave.letKnowNitroPin
 
     // An array of previously used enclaves that we should try and restore
     // key material from during registration. These must be ordered from
     // newest to oldest, so we check the latest enclaves for backups before
     // checking earlier enclaves.
-    public let svr2PreviousEnclaves: [MrEnclave] = [
-        MrEnclave("29cd63c87bea751e3bfd0fbd401279192e2e5c99948b4ee9437eafc4968355fb"),
-    ]
+    public let svr2PreviousEnclaves: [MrEnclave] = []
 
     public let applicationGroup = "group.com.suisse.ag.letKnow.signal.group"
 
@@ -219,8 +227,8 @@ public class TSConstantsStaging: TSConstantsProtocol {
     public let textSecureCDN3ServerURL = "https://cdn3-stage.letknow.info"
     public let storageServiceURL = "https://storage.stage.letknow.info:8444"
     public let sfuURL = "https://calling.stage.letknow.info:8445"
-    public let svr2URL = "wss://svr2.stage.letknow.info:8446/v1/enclave"
-    public let registrationCaptchaURL = "https://signalcaptchas.org/staging/registration/generate.html"
+    public let svr2URL = "wss://svr2.stage.letknow.info:8446"
+    public let registrationCaptchaURL = "https://chat.stage.letknow.info/v1/captcha/registration"
     public let challengeCaptchaURL = "https://signalcaptchas.org/staging/challenge/generate.html"
     // There's no separate test SFU for staging.
     public let sfuTestURL = "https://calling.stage.letknow.info:8445"
@@ -239,15 +247,13 @@ public class TSConstantsStaging: TSConstantsProtocol {
     public let storageServiceCensorshipPrefix = "storage-staging"
     public let svr2CensorshipPrefix = "svr2-staging"
 
-    public let svr2Enclave = MrEnclave("97f151f6ed078edbbfd72fa9cae694dcc08353f1f5e8d9ccd79a971b10ffc535")
+    public let svr2Enclave = MrEnclave.letKnowNitroPin
 
     // An array of previously used enclaves that we should try and restore
     // key material from during registration. These must be ordered from
     // newest to oldest, so we check the latest enclaves for backups before
     // checking earlier enclaves.
-    public let svr2PreviousEnclaves: [MrEnclave] = [
-        MrEnclave("a75542d82da9f6914a1e31f8a7407053b99cc99a0e7291d8fbd394253e19b036"),
-    ]
+    public let svr2PreviousEnclaves: [MrEnclave] = []
 
     public let applicationGroup = "group.com.suisse.ag.letKnow.signal.group.staging"
 

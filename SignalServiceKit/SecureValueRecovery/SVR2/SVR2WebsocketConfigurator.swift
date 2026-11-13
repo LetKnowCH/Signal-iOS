@@ -23,6 +23,7 @@ class SVR2WebsocketConfigurator: SgxWebsocketConfigurator {
     static var signalServiceType: SignalServiceType { .svr2 }
 
     static func websocketUrlPath(mrenclaveString: String) -> String {
+        if mrenclaveString == MrEnclave.letKnowNitroPin.dataValue.hexadecimalString { return "v1/enclave" }
         return "v1/\(mrenclaveString)"
     }
 
@@ -42,6 +43,9 @@ class SVR2WebsocketConfigurator: SgxWebsocketConfigurator {
         attestationMessage: Data,
         currentDate: Date,
     ) throws -> Svr2Client {
+        if mrenclave == .letKnowNitroPin {
+            return try Svr2Client(letKnowNitroAttestation: attestationMessage, currentDate: currentDate)
+        }
         return try Svr2Client(
             mrenclave: mrenclave.dataValue,
             attestationMessage: attestationMessage,
