@@ -62,6 +62,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>LetKnowWalletDirectoryHost</key>
+	<string>$(LETKNOW_WALLET_DIRECTORY_HOST)</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>

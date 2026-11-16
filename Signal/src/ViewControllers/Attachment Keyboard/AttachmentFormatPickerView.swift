@@ -14,6 +14,7 @@ protocol AttachmentFormatPickerDelegate: AnyObject {
     func didTapContact()
     func didTapLocation()
     func didTapPayment()
+    func didTapWalletTransfer()
     func didTapPoll()
 }
 
@@ -35,7 +36,7 @@ class AttachmentFormatPickerView: UIView {
     }()
 
     private lazy var contentView: UIStackView = {
-        let subviews = AttachmentType.cases(isGroup: isGroup).map { attachmentType in
+        let subviews = AttachmentType.cases(isGroup: isGroup, wallet: canOpenWalletTransfer).map { attachmentType in
             let subview = AttachmentTypeView(attachmentType: attachmentType)
             subview.isVerticallyCompactAppearance = traitCollection.verticalSizeClass == .compact
             subview.button.addAction(
@@ -54,6 +55,7 @@ class AttachmentFormatPickerView: UIView {
         return stackView
     }()
 
+    private let canOpenWalletTransfer: Bool
     private let isGroup: Bool
 
     private func didTapAttachmentButton(attachmentType: AttachmentType) {
@@ -66,6 +68,8 @@ class AttachmentFormatPickerView: UIView {
                 delegate.didTapPhotos()
             case .gif:
                 delegate.didTapGif()
+            case .walletTransfer:
+                delegate.didTapWalletTransfer()
             case .file:
                 delegate.didTapFile()
             case .payment:
@@ -80,7 +84,8 @@ class AttachmentFormatPickerView: UIView {
         }
     }
 
-    init(isGroup: Bool) {
+    init(isGroup: Bool, canOpenWalletTransfer: Bool) {
+        self.canOpenWalletTransfer = canOpenWalletTransfer
         self.isGroup = isGroup
 
         super.init(frame: .zero)
@@ -178,6 +183,7 @@ class AttachmentFormatPickerView: UIView {
 
     private enum AttachmentType: String, CaseIterable {
         case photo
+        case walletTransfer
         case gif
         case file
         case poll
@@ -185,8 +191,8 @@ class AttachmentFormatPickerView: UIView {
         case location
         case payment
 
-        private static var contactCases: [AttachmentType] {
-            var casesToExclude: [AttachmentType] = []
+        private static func contactCases(wallet: Bool) -> [AttachmentType] {
+            var casesToExclude: [AttachmentType] = wallet ? [] : [.walletTransfer]
             if !BuildFlags.pollOneOnOneSend {
                 casesToExclude.append(.poll)
             }
@@ -198,7 +204,7 @@ class AttachmentFormatPickerView: UIView {
         }
 
         private static var groupCases: [AttachmentType] {
-            return cases(except: [.payment])
+            return cases(except: [.payment, .walletTransfer])
         }
 
         private static func cases(except: [AttachmentType]) -> [AttachmentType] {
@@ -209,8 +215,8 @@ class AttachmentFormatPickerView: UIView {
             }
         }
 
-        static func cases(isGroup: Bool) -> [AttachmentType] {
-            return isGroup ? groupCases : contactCases
+        static func cases(isGroup: Bool, wallet: Bool) -> [AttachmentType] {
+            return isGroup ? groupCases : contactCases(wallet: wallet)
         }
     }
 
@@ -306,7 +312,7 @@ class AttachmentFormatPickerView: UIView {
 
             addSubview(button)
             NSLayoutConstraint.activate([
-                button.widthAnchor.constraint(equalToConstant: 76),
+                button.widthAnchor.constraint(greaterThanOrEqualToConstant: 76),
                 buttonHeightConstraint,
             ])
             button.autoPinEdges(toSuperviewEdgesExcludingEdge: .bottom)
@@ -316,6 +322,13 @@ class AttachmentFormatPickerView: UIView {
             textLabel.autoPinEdges(toSuperviewEdgesExcludingEdge: .top)
 
             configure()
+            if attachmentType == .walletTransfer {
+                textLabel.numberOfLines = 1
+                textLabel.adjustsFontSizeToFitWidth = false
+                textLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+                return
+            }
+            button.widthAnchor.constraint(equalToConstant: 76).isActive = true
         }
 
         @available(*, unavailable, message: "Unimplemented")
@@ -331,6 +344,9 @@ class AttachmentFormatPickerView: UIView {
             case .photo:
                 text = OWSLocalizedString("ATTACHMENT_KEYBOARD_PHOTOS", comment: "A button to open the photo picker from the Attachment Keyboard")
                 imageName = "album-tilt-28"
+            case .walletTransfer:
+                text = "Send money"
+                imageName = "payment-28"
             case .contact:
                 text = OWSLocalizedString("ATTACHMENT_KEYBOARD_CONTACT", comment: "A button to select a contact from the Attachment Keyboard")
                 imageName = "person-circle-28"

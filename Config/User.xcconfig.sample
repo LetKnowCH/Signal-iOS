@@ -9,3 +9,6 @@ OTHER_SWIFT_FLAGS = $(inherited) -no-warnings-as-errors
 // the relevant line in the Podfile to set RINGRTC_USE_FILE_BASED_CAMERA, and
 // put a video file at the below location
 // MAYBE_INPUT_VIDEO_PATH = Signal/test/Assets/input_video.mp4
+
+// Set the HTTPS wallet directory host and port for device builds.
+// LETKNOW_WALLET_DIRECTORY_HOST = directory.example.test:18443
