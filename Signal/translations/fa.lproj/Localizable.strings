@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "همین حالا به‌روزرسانی کنید";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "سیگنال قادر به راه‌اندازی نیست. لطفاً گزارش عیب‌یابی خود را به support@signal.org ارسال کنید تا ما بتوانیم این مشکل را رفع کنیم.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "سیگنال قادر به راه‌اندازی نیست. لطفاً گزارش عیب‌یابی خود را به support@letKnow.com ارسال کنید تا ما بتوانیم این مشکل را رفع کنیم.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "به جای آن سیگنال را باز کنید";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "لطفاً یک گزارش رفع اشکال به نشانی support@signal.org بفرستید تا بتوانیم این مشکل را حل کنیم.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "لطفاً یک گزارش رفع اشکال به نشانی support@letKnow.com بفرستید تا بتوانیم این مشکل را حل کنیم.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "سیگنال باز نشد";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "نسخهٔ پایگاه داده شناخته شده نیست.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "سیگنال هنگام تلاش برای باز کردن مشکل داشت. لطفاً برای کمک به رفع مشکل، گزارش عیب‌یابی را به support@signal.org ارسال کنید.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "سیگنال هنگام تلاش برای باز کردن مشکل داشت. لطفاً برای کمک به رفع مشکل، گزارش عیب‌یابی را به support@letKnow.com ارسال کنید.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "سیگنال باز نشد";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "فضای حافظه کم است";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "داده‌هایی که از دستگاه قدیمی شما انتقال یافته است امکان بازیابی ندارند. لطفاً یک گزارش عیب‌یابی به support@signal.org ارسال کنید تا ما بتوانیم این مشکل را رفع کنیم. اگر سیگنال را دوباره نصب کنید، ممکن است تاریخچهٔ پیام‌های شما از دست برود.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "داده‌هایی که از دستگاه قدیمی شما انتقال یافته است امکان بازیابی ندارند. لطفاً یک گزارش عیب‌یابی به support@letKnow.com ارسال کنید تا ما بتوانیم این مشکل را رفع کنیم. اگر سیگنال را دوباره نصب کنید، ممکن است تاریخچهٔ پیام‌های شما از دست برود.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "امکان تکمیل انتقال وجود نداشت";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "به نرم افزار پیام رسان سیگنال بپیوندید";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "دستگاه شما برای ارسال ایمیل پیکربندی نشده است. برای ارسال یک درخواست پشتیبانی، ایمیل را روی دستگاه خود تنظیم کنید یا به support@signal.org ایمیل ارسال کنید";
+"EMAIL_SIGNAL_MESSAGE" = "دستگاه شما برای ارسال ایمیل پیکربندی نشده است. برای ارسال یک درخواست پشتیبانی، ایمیل را روی دستگاه خود تنظیم کنید یا به support@letKnow.com ایمیل ارسال کنید";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "ایمیل در دسترس نیست";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "خطا در شبکه";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "لطفاً به ما در بهبود سیگنال با ارسال گزارش این خطا به همراه گزارش‌های عیب‌یابی از دستگاه خود به support@signal.org کمک کنید: %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "لطفاً به ما در بهبود سیگنال با ارسال گزارش این خطا به همراه گزارش‌های عیب‌یابی از دستگاه خود به support@letKnow.com کمک کنید: %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "سیگنال بتا: خطایی رخ داد";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "درباره این موضوع به ما بگویید: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "لطفاً درخواست پشتیبانی خود را به نشانی ایمیل support@signal.org ارسال کنید";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "لطفاً درخواست پشتیبانی خود را به نشانی ایمیل support@letKnow.com ارسال کنید";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "فیلتر: %1$@";

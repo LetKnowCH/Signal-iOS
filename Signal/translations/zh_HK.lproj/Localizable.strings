@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "立即更新";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal 無法正常啟動。請將除錯日誌傳送至 support@signal.org 以讓我們解決問題。";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal 無法正常啟動。請將除錯日誌傳送至 support@letKnow.com 以讓我們解決問題。";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "照樣開啟 Signal";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "請將除錯日誌傳送至 support@signal.org 協助我們解決問題。";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "請將除錯日誌傳送至 support@letKnow.com 協助我們解決問題。";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "無法開啟 Signal";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "未知資料庫版本";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal 先前嘗試開啟的時候發生問題。請將除錯記錄檔傳送至 support@signal.org 協助解決此問題。";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal 先前嘗試開啟的時候發生問題。請將除錯記錄檔傳送至 support@letKnow.com 協助解決此問題。";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "先前未能開啟 Signal";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "儲存空間不足";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "無法還原從舊裝置轉移的資料。請將除錯日誌傳送至 support@signal.org 以便我們修正問題。重新安裝 Signal 可能會導致訊息紀錄遺失。";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "無法還原從舊裝置轉移的資料。請將除錯日誌傳送至 support@letKnow.com 以便我們修正問題。重新安裝 Signal 可能會導致訊息紀錄遺失。";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "無法完成傳送資料";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "我們不如改用 Signal 吧";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "您的裝置尚未設定為傳送電郵。如欲傳送支援請求，請在您的裝置內設定電郵或傳送確認電郵 support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "您的裝置尚未設定為傳送電郵。如欲傳送支援請求，請在您的裝置內設定電郵或傳送確認電郵 support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "電郵不可用";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "網路出錯。";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "為協助我們改進 Signal，敬請附上由您的裝置產生的除錯記錄檔，並將此錯誤報告給 support@signal.org；%1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "為協助我們改進 Signal，敬請附上由您的裝置產生的除錯記錄檔，並將此錯誤報告給 support@letKnow.com；%1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal 測試版：發生錯誤";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "請告訴我們該問題的詳情： ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "請將您的支援請求傳送至 support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "請將您的支援請求傳送至 support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "篩選：%1$@";

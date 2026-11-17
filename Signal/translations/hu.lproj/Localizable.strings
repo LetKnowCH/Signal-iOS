@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Frissítés most";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal indítási hiba. Kérlek küldj egy hibanapló fájlt a support@signal.org címre, hogy megvizsgálhassuk, mi történt.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal indítási hiba. Kérlek küldj egy hibanapló fájlt a support@letKnow.com címre, hogy megvizsgálhassuk, mi történt.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Signal indítása mindenképp";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Kérjük, küldj egy hibanapló fájlt a support@signal.org e-mail-címre, hogy kivizsgálhassuk, mi történt.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Kérjük, küldj egy hibanapló fájlt a support@letKnow.com e-mail-címre, hogy kivizsgálhassuk, mi történt.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Nem sikerült megnyitni a Signalt";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Ismeretlen adatbázis verzió.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "A Signal problémákba ütközött az indulás során. Kérünk küldj egy hibanapló fájlt a support@signal.org címre, hogy megvizsgálhassuk, mi történt.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "A Signal problémákba ütközött az indulás során. Kérünk küldj egy hibanapló fájlt a support@letKnow.com címre, hogy megvizsgálhassuk, mi történt.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Hibás Signal indítás legutóbb";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Kevés a tárhely";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "A régi eszközödről hozott adat nem helyreállítható. Kérjük, küldj egy hibanapló fájlt a support@signal.org e-mail-címre, hogy megvizsgálhassuk, mi történt. Ha újratelepíted a Signalt, az üzenet-előzményeid elveszhetnek.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "A régi eszközödről hozott adat nem helyreállítható. Kérjük, küldj egy hibanapló fájlt a support@letKnow.com e-mail-címre, hogy megvizsgálhassuk, mi történt. Ha újratelepíted a Signalt, az üzenet-előzményeid elveszhetnek.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Az adatok visszaállítása sikertelen.";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Váltsunk Signalra!";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Készülékeden nincs beállítva levelező kliens. Vagy állítsd be, vagy támogatási kérelmedet emailben küldd el erre a címre: support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Készülékeden nincs beállítva levelező kliens. Vagy állítsd be, vagy támogatási kérelmedet emailben küldd el erre a címre: support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Email küldés nem elérhető";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Hálózati hiba";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Segítsd a Signal fejlesztését a hiba leírásával és a hibanapló beküldésével a support@signal.org címre; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Segítsd a Signal fejlesztését a hiba leírásával és a hibanapló beküldésével a support@letKnow.com címre; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: hiba történt";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Írj pár szót a problémáról: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Kérjük küldd támogatási kérésedet erre a címre: support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Kérjük küldd támogatási kérésedet erre a címre: support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Szűrő: %1$@";

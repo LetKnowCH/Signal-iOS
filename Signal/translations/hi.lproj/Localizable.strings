@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "अभी अपडेट करें";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal चालू नहीं हो पा रहा है। कृपया इसके लिए support@signal.org पर डीबग लॉग भेजें, ताकि हम आपकी सहायता कर सकें।";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal चालू नहीं हो पा रहा है। कृपया इसके लिए support@letKnow.com पर डीबग लॉग भेजें, ताकि हम आपकी सहायता कर सकें।";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "फिर भी Signal खोलें";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "कृपया support@signal.org पर हमें डीबग लॉग भेजें, ताकि हम इस समस्या को सुलझा सकें।";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "कृपया support@letKnow.com पर हमें डीबग लॉग भेजें, ताकि हम इस समस्या को सुलझा सकें।";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal नहीं खुल पाया";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "डेटाबेस के वर्ज़न का पता नहीं चल पाया।";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal खोलने में कोई समस्या आई। कृपया इसके लिए support@signal.org पर डीबग लॉग भेजें, ताकि हम आपकी सहायता कर सकें।";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal खोलने में कोई समस्या आई। कृपया इसके लिए support@letKnow.com पर डीबग लॉग भेजें, ताकि हम आपकी सहायता कर सकें।";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal नहीं खुला";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "स्टोरेज स्पेस कम है";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "आपके पुराने डिवाइस से ट्रांसफ़र किया गया डेटा रीस्टोर नहीं हो सका। कृपया support@signal.org पर एक डीबग लॉग भेजें, ताकि हम इस समस्या को सुलझा सकें। Signal रीइंस्टॉल करने पर आपके पुराने मैसेज मिट सकते हैं।";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "आपके पुराने डिवाइस से ट्रांसफ़र किया गया डेटा रीस्टोर नहीं हो सका। कृपया support@letKnow.com पर एक डीबग लॉग भेजें, ताकि हम इस समस्या को सुलझा सकें। Signal रीइंस्टॉल करने पर आपके पुराने मैसेज मिट सकते हैं।";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "ट्रांसफ़र नहीं हो पाया";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "आइए Signal पर स्विच करें";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "आपके डिवाइस का कॉन्फ़िगरेशन ईमेल भेजने की सुविधा नहीं देता।सहायता से जुड़ा अनुरोध भेजने के लिए, अपने डिवाइस पर ईमेल सेट अप करें या इस पते पर ईमेल करें: support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "आपके डिवाइस का कॉन्फ़िगरेशन ईमेल भेजने की सुविधा नहीं देता।सहायता से जुड़ा अनुरोध भेजने के लिए, अपने डिवाइस पर ईमेल सेट अप करें या इस पते पर ईमेल करें: support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "ईमेल मौजूद नहीं है";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "नेटवर्क में कोई गड़बड़ी हुई";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "कृपया Signal को बेहतर बनाने में मदद करें। इस गड़बड़ी की जानकारी के साथ-साथ अपने डिवाइस से support@signal.org पर डीबग लॉग भेजें; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "कृपया Signal को बेहतर बनाने में मदद करें। इस गड़बड़ी की जानकारी के साथ-साथ अपने डिवाइस से support@letKnow.com पर डीबग लॉग भेजें; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal बीटा: कोई गड़बड़ी हुई";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "हमें समस्या के बारे में बताएं: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "कृपया, सहायता के अनुरोध के लिए support@signal.org पर ईमेल भेजें";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "कृपया, सहायता के अनुरोध के लिए support@letKnow.com पर ईमेल भेजें";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "फ़िल्टर: %1$@";

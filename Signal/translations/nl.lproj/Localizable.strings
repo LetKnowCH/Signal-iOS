@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Werk nu bij";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal kan niet opstarten. Stuur alsjeblieft een foutopsporingslog naar support@signal.org zodat we dit probleem kunnen oplossen.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal kan niet opstarten. Stuur alsjeblieft een foutopsporingslog naar support@letKnow.com zodat we dit probleem kunnen oplossen.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Signal nogmaals openen";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Stuur een foutopsporingslog naar support@signal.org zodat we dit probleem kunnen oplossen.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Stuur een foutopsporingslog naar support@letKnow.com zodat we dit probleem kunnen oplossen.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Kon Signal niet openen";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Onbekende database-versie.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Er ging iets mis bij het openen van Signal. Stuur alsjeblieft een foutopsporingslog naar support@signal.org om ons te helpen het probleem te begrijpen en op te lossen.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Er ging iets mis bij het openen van Signal. Stuur alsjeblieft een foutopsporingslog naar support@letKnow.com om ons te helpen het probleem te begrijpen en op te lossen.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Kon Signal niet openen";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Opslagruimte bijna vol";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "De overgezette gegevens van je oude apparaat konden niet worden hersteld op dit apparaat. Stuur een foutopsporingslog naar support@signal.org zodat we een oplossing kunnen zoeken voor dit probleem. Als je Signal opnieuw installeert, gaat je chatgeschiedenis misschien verloren.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "De overgezette gegevens van je oude apparaat konden niet worden hersteld op dit apparaat. Stuur een foutopsporingslog naar support@letKnow.com zodat we een oplossing kunnen zoeken voor dit probleem. Als je Signal opnieuw installeert, gaat je chatgeschiedenis misschien verloren.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Het overzetten van je Signal-account kon niet succesvol worden afgerond";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Laten we overstappen naar Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Je apparaat is niet geconfigureerd om e-mails te verzenden. Om een ondersteuningsverzoek te verzenden moet je eerst e-mail instellen op je apparaat of je kunt zelf een e-mail sturen naar support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Je apparaat is niet geconfigureerd om e-mails te verzenden. Om een ondersteuningsverzoek te verzenden moet je eerst e-mail instellen op je apparaat of je kunt zelf een e-mail sturen naar support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail is niet beschikbaar";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Netwerkfout";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Help ons alsjeblieft om Signal te verbeteren door deze fout te melden via support@signal.org en door je foutopsporingslog mee te sturen; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Help ons alsjeblieft om Signal te verbeteren door deze fout te melden via support@letKnow.com en door je foutopsporingslog mee te sturen; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal-bèta: er heeft zich een fout voorgedaan";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Omschrijf wat je probleem is: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "E-mail je ondersteuningsverzoek naar support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "E-mail je ondersteuningsverzoek naar support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filter: %1$@";

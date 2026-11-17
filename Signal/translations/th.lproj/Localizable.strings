@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "อัปเดตตอนนี้";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "ไม่สามารถเปิด Signal ได้ กรุณาส่งปูมดีบักไปที่ support@signal.org เพื่อที่เราจะสามารถแก้ปัญหานี้ได้";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "ไม่สามารถเปิด Signal ได้ กรุณาส่งปูมดีบักไปที่ support@letKnow.com เพื่อที่เราจะสามารถแก้ปัญหานี้ได้";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "เปิด Signal แทน";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "กรุณาส่งบันทึกดีบักไปที่ support@signal.org เพื่อที่เราจะสามารถแก้ไขปัญหานี้";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "กรุณาส่งบันทึกดีบักไปที่ support@letKnow.com เพื่อที่เราจะสามารถแก้ไขปัญหานี้";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "ไม่สามารถเปิด Signal ได้";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "รุ่นฐานข้อมูลที่ไม่รู้จัก";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal มีปัญหาขณะกำลังเปิด กรุณาส่งปูมดีบักไปยังsupport@signal.org เพื่อช่วยแก้ไขปัญหานี้";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal มีปัญหาขณะกำลังเปิด กรุณาส่งปูมดีบักไปยังsupport@letKnow.com เพื่อช่วยแก้ไขปัญหานี้";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "เปิด Signal ไม่ได้";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "พื้นที่จัดเก็บน้อยมาก";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "ข้อมูลที่ถูกถ่ายโอนจากอุปกรณ์เครื่องเก่าของคุณจะไม่สามารถกู้คืนได้ กรุณาส่งบันทึกการดีบักไปที่ support@signal.org เพื่อให้เราแก้ไขปัญหานี้ หากคุณติดตั้ง Signal ใหม่อีกครั้ง ประวัติการส่งข้อความของคุณอาจจะหายไป";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "ข้อมูลที่ถูกถ่ายโอนจากอุปกรณ์เครื่องเก่าของคุณจะไม่สามารถกู้คืนได้ กรุณาส่งบันทึกการดีบักไปที่ support@letKnow.com เพื่อให้เราแก้ไขปัญหานี้ หากคุณติดตั้ง Signal ใหม่อีกครั้ง ประวัติการส่งข้อความของคุณอาจจะหายไป";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "ไม่สามารถถ่ายโอนจนเสร็จ";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "เปลี่ยนมาใช้ Signal กันเถอะ";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "อุปกรณ์ของคุณไม่ได้ตั้งค่าให้ส่งอีเมลไว้ ในการส่งคำขอการสนับสนุน คุณจะต้องตั้งค่าอีเมลบนอุปกรณ์และอีเมลของคุณ support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "อุปกรณ์ของคุณไม่ได้ตั้งค่าให้ส่งอีเมลไว้ ในการส่งคำขอการสนับสนุน คุณจะต้องตั้งค่าอีเมลบนอุปกรณ์และอีเมลของคุณ support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "อีเมลไม่พร้อมใช้งาน";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "ข้อผิดพลาดจากเครือข่าย";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "กรุณาช่วยเราปรับปรุง Signal ด้วยการรายงานข้อผิดพลาดนี้ พร้อมปูมดีบักจากอุปกรณ์ของคุณไปยัง support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "กรุณาช่วยเราปรับปรุง Signal ด้วยการรายงานข้อผิดพลาดนี้ พร้อมปูมดีบักจากอุปกรณ์ของคุณไปยัง support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Siganl Beta: เกิดข้อผิดพลาด";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "บอกปัญหากับเรา: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "โปรดส่งอีเมลคำขอการสนับสนุนไปที่ support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "โปรดส่งอีเมลคำขอการสนับสนุนไปที่ support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "ตัวกรอง: %1$@";

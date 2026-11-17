@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "ju aktualizujte";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal sa nedá spustiť. Pošlite, prosím, denník ladenia na support@signal.org, aby sme mohli tento problém vyriešiť.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal sa nedá spustiť. Pošlite, prosím, denník ladenia na support@letKnow.com, aby sme mohli tento problém vyriešiť.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Namiesto toho otvorte Signal";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Pošlite nám denník ladenia (debug log) na adresu support@signal.org, aby sme mohli daný problém vyriešiť.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Pošlite nám denník ladenia (debug log) na adresu support@letKnow.com, aby sme mohli daný problém vyriešiť.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal sa nepodarilo otvoriť";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Neznáma verzia databázy";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Pri pokuse o otvorenie sa vyskytol problém so Signal. Pošlite ladiaci záznam na adresu support@signal.org, aby ste pomohli vyriešiť tento problém.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Pri pokuse o otvorenie sa vyskytol problém so Signal. Pošlite ladiaci záznam na adresu support@letKnow.com, aby ste pomohli vyriešiť tento problém.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal sa nepodarilo otvoriť";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Nedostatok úložného priestoru";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Údaje prenesené z vášho starého zariadenia sa nepodarilo obnoviť. Odošlite denník ladenia na adresu support@signal.org, aby sme mohli tento problém vyriešiť. Ak Signal preinštalujete, môžete prísť o vašu históriu správ.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Údaje prenesené z vášho starého zariadenia sa nepodarilo obnoviť. Odošlite denník ladenia na adresu support@letKnow.com, aby sme mohli tento problém vyriešiť. Ak Signal preinštalujete, môžete prísť o vašu históriu správ.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Prenos sa nepodarilo dokončiť";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Prejdime na Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Vaše zariadenie nie je nastavené na odosielanie E-mailov. Pre poslanie žiadosti o technickú podporu, nastavte E-maily na vašom zariadení, alebo napíšte na support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Vaše zariadenie nie je nastavené na odosielanie E-mailov. Pre poslanie žiadosti o technickú podporu, nastavte E-maily na vašom zariadení, alebo napíšte na support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail nedostupný";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Chyba siete";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Pomôžte nám zlepšiť Signal nahlásením tejto chyby spolu s denníkmi ladenia z vášho zariadenia na adresu support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Pomôžte nám zlepšiť Signal nahlásením tejto chyby spolu s denníkmi ladenia z vášho zariadenia na adresu support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: Vyskytla sa chyba";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Povedzte nám, aký máte problém: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Prosím, pošlite vašu žiadosť o technickú podporu E-mailom na support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Prosím, pošlite vašu žiadosť o technickú podporu E-mailom na support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filter: %1$@";

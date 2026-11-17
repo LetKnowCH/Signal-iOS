@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Actualizează acum";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal nu poate porni. Te rog trimite jurnalul tău de depanare la support@signal.org ca să investigăm problema.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal nu poate porni. Te rog trimite jurnalul tău de depanare la support@letKnow.com ca să investigăm problema.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Deschide Signal";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Trimite jurnalul tău de depanare la support@signal.org ca să investigăm problema.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Trimite jurnalul tău de depanare la support@letKnow.com ca să investigăm problema.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal nu a putut fi deschis";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Versiune de bază de date necunoscută.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal a întâmpinat o problemă la pornire. Te rugăm să trimiți un jurnal de depanare la support@signal.org pentru a ajuta la rezolvarea acestei probleme.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal a întâmpinat o problemă la pornire. Te rugăm să trimiți un jurnal de depanare la support@letKnow.com pentru a ajuta la rezolvarea acestei probleme.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal nu a putut fi deschis";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Spațiu de stocare redus";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Datele transferate de pe dispozitivul tău vechi nu au putut fi restabilite. Te rugăm să trimiți un jurnal de depanare la support@signal.org pentru a putea rezolva această problemă. Dacă reinstalezi Signal, istoricul mesajelor tale poate fi pierdut.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Datele transferate de pe dispozitivul tău vechi nu au putut fi restabilite. Te rugăm să trimiți un jurnal de depanare la support@letKnow.com pentru a putea rezolva această problemă. Dacă reinstalezi Signal, istoricul mesajelor tale poate fi pierdut.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Transferul nu s-a putut finaliza";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Hai să folosim Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Dispozitivul tău nu este configurat pentru a trimite email. Pentru a trimite o solicitare de asistență, configurează un email pe dispozitivul tău sau trimite email la support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Dispozitivul tău nu este configurat pentru a trimite email. Pentru a trimite o solicitare de asistență, configurează un email pe dispozitivul tău sau trimite email la support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Email indisponibil";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Eroare de rețea";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Te rugăm să ne ajuți să îmbunătățim Signal raportând această eroare împreună cu jurnalele de depanare de pe dispozitivul tău la adresa support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Te rugăm să ne ajuți să îmbunătățim Signal raportând această eroare împreună cu jurnalele de depanare de pe dispozitivul tău la adresa support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: S-a produs o eroare";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Spune-ne despre problemă: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Vă rugăm să trimiteți un email pentru solicitare de asistență la support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Vă rugăm să trimiteți un email pentru solicitare de asistență la support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filtru: %1$@";

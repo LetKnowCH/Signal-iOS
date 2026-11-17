@@ -207,7 +207,7 @@ final class ComposeSupportEmailOperation: NSObject {
 
     private var emailURL: URL? {
         let linkBuilder = MailtoLink(
-            to: "support@signal.org",
+            to: "support@letKnow.com",
             subject: model.localizedSubject,
             body: emailBody,
         )

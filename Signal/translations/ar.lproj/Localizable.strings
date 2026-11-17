@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "حدِّث الآن";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "يتعذَّر بدء سيجنال. لتمكيننا من مساعدتك في حل المشكلة، يُرجى إرسال سجل الأخطاء إلى بريد الدعم: support@signal.org";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "يتعذَّر بدء سيجنال. لتمكيننا من مساعدتك في حل المشكلة، يُرجى إرسال سجل الأخطاء إلى بريد الدعم: support@letKnow.com";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "افتح تطبيق سيجنال بدلًا من ذلك";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "يُرجى إرسال سِجلات الأخطاء إلى support@signal.org لكي نتمكّن من حل هذه المشكلة.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "يُرجى إرسال سِجلات الأخطاء إلى support@letKnow.com لكي نتمكّن من حل هذه المشكلة.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "تعذَّر فتح تطبيق سيجنال";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "إصدار قاعدة البيانات مجهول.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "وقع خطأ لسيجنال أثناء محاولة فتحه. يُرجى إرسال سجل الاخطاء إلى support@signal.org لمساعدتنا في حل المشكلة.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "وقع خطأ لسيجنال أثناء محاولة فتحه. يُرجى إرسال سجل الاخطاء إلى support@letKnow.com لمساعدتنا في حل المشكلة.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "تعذَّر فتح تطبيق سيجنال";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "مساحة التخزين مُنخفضة";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "تعذَّر استعادة البيانات المنقولة من جهازك القديم. يُرجى إرسال سجل الأخطاء إلى support@signal.org حتى نتمكّن من حل المُشكلة. إذا قُمتَ بإعادة تثبيت سيجنال، فقد تفقد سجل الرسائل لديك.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "تعذَّر استعادة البيانات المنقولة من جهازك القديم. يُرجى إرسال سجل الأخطاء إلى support@letKnow.com حتى نتمكّن من حل المُشكلة. إذا قُمتَ بإعادة تثبيت سيجنال، فقد تفقد سجل الرسائل لديك.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "تعذّر إتمام عملية النقل";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "لننتقل إلى سيجنال";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "لم يتمّ تجهيز جهازك لإرسال رسائل إلكترونية. لإرسال طلب دعم، قُم بإعداد رسالة إلكترونية على جهازك أو أرسِل رسالة إلكترونية إلى support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "لم يتمّ تجهيز جهازك لإرسال رسائل إلكترونية. لإرسال طلب دعم، قُم بإعداد رسالة إلكترونية على جهازك أو أرسِل رسالة إلكترونية إلى support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "البريد الإلكتروني غير متاح";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "خطأ في الشبكة";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "‫نرجو منك مساعدتنا على تحسين سيجنال، وذلك بالإبلاغ عن هذا الخطأ مع إرفاق سِجلات الأخطاء من جهازك إلى support@signal.org؛ %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "‫نرجو منك مساعدتنا على تحسين سيجنال، وذلك بالإبلاغ عن هذا الخطأ مع إرفاق سِجلات الأخطاء من جهازك إلى support@letKnow.com؛ %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "‫إصدار سيجنال التجريبي‬: حدث خطأ ما";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "أخبِرنا حول المشكلة: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "يُرجى إرسال طلب الدعم بواسطة البَريد الإلكتروني إلى support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "يُرجى إرسال طلب الدعم بواسطة البَريد الإلكتروني إلى support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "الفلتر: %1$@";

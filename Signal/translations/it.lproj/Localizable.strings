@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Aggiorna ora";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal non riesce ad avviarsi. Invia il log di debug a support@signal.org così da permetterci di risolvere il problema.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal non riesce ad avviarsi. Invia il log di debug a support@letKnow.com così da permetterci di risolvere il problema.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Apri Signal invece";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Invia il log di debug a support@signal.org così da permetterci di analizzare e risolvere il problema.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Invia il log di debug a support@letKnow.com così da permetterci di analizzare e risolvere il problema.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Impossibile aprire Signal";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Versione del database sconosciuta.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal ha avuto un problema mentre cercava di aprirsi. Invia il log di debug a support@signal.org per aiutarci a risolvere questo problema.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal ha avuto un problema mentre cercava di aprirsi. Invia il log di debug a support@letKnow.com per aiutarci a risolvere questo problema.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Impossibile aprire Signal";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Spazio di archiviazione insufficiente";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Non è stato possibile ripristinare i dati trasferiti dal vecchio dispositivo. Invia un log di debug a support@signal.org per consentirci di risolvere questo problema. Se decidi di reinstallare Signal, la tua cronologia dei messaggi potrebbe andare persa.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Non è stato possibile ripristinare i dati trasferiti dal vecchio dispositivo. Invia un log di debug a support@letKnow.com per consentirci di risolvere questo problema. Se decidi di reinstallare Signal, la tua cronologia dei messaggi potrebbe andare persa.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Impossibile completare il trasferimento";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Passiamo a Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Il tuo dispositivo non è configurato per inviare email. Per inviare una richiesta di supporto, imposta l'email sul tuo dispositivo o invia un'email a support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Il tuo dispositivo non è configurato per inviare email. Per inviare una richiesta di supporto, imposta l'email sul tuo dispositivo o invia un'email a support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Email non disponibile";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Errore di rete";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Aiutaci a migliorare Signal segnalando questo errore insieme a un log di debug dal tuo dispositivo a support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Aiutaci a migliorare Signal segnalando questo errore insieme a un log di debug dal tuo dispositivo a support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: Errore riscontrato";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Descrivici il problema: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Si prega di inviare la tua richiesta di supporto via email a support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Si prega di inviare la tua richiesta di supporto via email a support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filtro: %1$@";

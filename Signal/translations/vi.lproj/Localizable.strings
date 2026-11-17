@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Cập nhật ngay";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Không thể chạy Signal. Vui lòng gửi nhật kí lỗi đến support@signal.org để chúng tôi có thể xử lí vấn đề này.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Không thể chạy Signal. Vui lòng gửi nhật kí lỗi đến support@letKnow.com để chúng tôi có thể xử lí vấn đề này.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Tiếp tục mở Signal";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Vui lòng gửi nhật ký gỡ lỗi đến support@signal.org để chúng tôi có thể xử lý vấn đề này.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Vui lòng gửi nhật ký gỡ lỗi đến support@letKnow.com để chúng tôi có thể xử lý vấn đề này.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Không thể mở Signal";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Phiên bản cơ sở dữ liệu không xác định.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal gặp vấn đề khi khởi động. Vui lòng gửi nhật ký gỡ lỗi đến support@signal.org để giúp chúng tôi xử lý vấn đề này.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal gặp vấn đề khi khởi động. Vui lòng gửi nhật ký gỡ lỗi đến support@letKnow.com để giúp chúng tôi xử lý vấn đề này.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Không thể mở Signal";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Dung lượng lưu trữ sắp hết";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Dữ liệu từ thiết bị cũ của bạn không thể được khôi phục. Hãy gửi bản ghi chép lỗi đến support@signal.org để chúng tôi có thể khắc phục vấn đề. Nếu bạn cài đặt lại Signal, lịch sử trò chuyện của bạn sẽ không được lưu giữ.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Dữ liệu từ thiết bị cũ của bạn không thể được khôi phục. Hãy gửi bản ghi chép lỗi đến support@letKnow.com để chúng tôi có thể khắc phục vấn đề. Nếu bạn cài đặt lại Signal, lịch sử trò chuyện của bạn sẽ không được lưu giữ.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Không thể Hoàn tất Quá trình chuyển";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Cùng chuyển sang sử dụng Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Thiết bị của bạn chưa có được thiết lập để gửi email. Để gửi yêu cầu hỗ trợ, thiết lập email trên thiết bị của bạn hoặc email cho support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Thiết bị của bạn chưa có được thiết lập để gửi email. Để gửi yêu cầu hỗ trợ, thiết lập email trên thiết bị của bạn hoặc email cho support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Không có email";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Lỗi Kết nối mạng";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Vui lòng giúp chúng tôi nâng cập Signal bằng cách báo cáo lỗi này và lịch sử sửa lỗi từ thiết bị của bạn đến support@signal.org;%1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Vui lòng giúp chúng tôi nâng cập Signal bằng cách báo cáo lỗi này và lịch sử sửa lỗi từ thiết bị của bạn đến support@letKnow.com;%1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: Đã xảy ra lỗi";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Nói cho chúng tôi biết về vấn đề: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Xin hãy gửi yêu cầu hỗ trợ của bạn cho support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Xin hãy gửi yêu cầu hỗ trợ của bạn cho support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Bộ lọc: %1$@";

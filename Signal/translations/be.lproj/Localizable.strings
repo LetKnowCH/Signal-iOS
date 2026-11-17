@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Абнавіце зараз";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Не атрымалася запусціць Signal. Калі ласка, адпраўце журнал адладкі на support@signal.org, каб мы змаглі выправіць гэтую непаладку.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Не атрымалася запусціць Signal. Калі ласка, адпраўце журнал адладкі на support@letKnow.com, каб мы змаглі выправіць гэтую непаладку.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Адкрыць тады Signal";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Калі ласка, адпраўце журнал адладкі на support@signal.org, каб мы змаглі выправіць гэтую непаладку.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Калі ласка, адпраўце журнал адладкі на support@letKnow.com, каб мы змаглі выправіць гэтую непаладку.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Не атрымалася адкрыць Signal";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Невядомая версія базы даных.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal сутыкнуўся з праблемай падчас адкрыцця праграмы. Калі ласка, адпраўце журнал адладкі на support@signal.org, каб дапамагчы нам выправіць гэтую непаладку.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal сутыкнуўся з праблемай падчас адкрыцця праграмы. Калі ласка, адпраўце журнал адладкі на support@letKnow.com, каб дапамагчы нам выправіць гэтую непаладку.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Не атрымалася адкрыць Signal";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Недастаткова месца ў сховішчы";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Не атрымалася аднавіць даныя, што былі перанесены са старой прылады. Калі ласка, адпраўце журнал адладкі на support@signal.org, каб мы змаглі выправіць гэтую непаладку. Калі вы нанова ўсталюеце Signal, ваша гісторыя паведамленняў можа быць страчана.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Не атрымалася аднавіць даныя, што былі перанесены са старой прылады. Калі ласка, адпраўце журнал адладкі на support@letKnow.com, каб мы змаглі выправіць гэтую непаладку. Калі вы нанова ўсталюеце Signal, ваша гісторыя паведамленняў можа быць страчана.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Не атрымалася завяршыць перанос";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Давайце пяройдзем на Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Ваша прылада не наладжана, каб адпраўляць электронны ліст. Каб адправіць запыт у службу падтрымкі, наладзьце электронную пошту на сваёй прыладзе або адпраўце электронны ліст на support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Ваша прылада не наладжана, каб адпраўляць электронны ліст. Каб адправіць запыт у службу падтрымкі, наладзьце электронную пошту на сваёй прыладзе або адпраўце электронны ліст на support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Электронная пошта недаступная";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Памылка сеткі";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Вы дапаможаце нам палепшыць Signal, калі паведаміце аб гэтай памылцы і адправіце нам журналы адладкі з вашай прылады на support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Вы дапаможаце нам палепшыць Signal, калі паведаміце аб гэтай памылцы і адправіце нам журналы адладкі з вашай прылады на support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: адбылася памылка";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Паведайце нам аб праблеме: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Вы можаце адправіць свой запыт на support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Вы можаце адправіць свой запыт на support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Фільтр: %1$@";

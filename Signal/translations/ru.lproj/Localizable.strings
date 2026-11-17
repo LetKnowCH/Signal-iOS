@@ -2,10 +2,10 @@
 "AB_PERMISSION_MISSING_ACTION_NOT_NOW" = "Не сейчас";
 
 /* Footer for the 'about' help section. For non-English languages, exclude the word '501c3'. */
-"ABOUT_SECTION_FOOTER" = "Авторские права Signal Messenger\nЛицензировано под AGPLv3\nSignal является некоммерческой организацией";
+"ABOUT_SECTION_FOOTER" = "LetKnow — независимый форк Signal.\nАвторские права на исходный код Signal: Signal Messenger, LLC.\nЛицензия AGPLv3.";
 
 /* Title for the 'about' help section */
-"ABOUT_SECTION_TITLE" = "О приложении Signal";
+"ABOUT_SECTION_TITLE" = "О приложении LetKnow";
 
 /* Label for forward button in media control panel */
 "ACCESSIBILITY_FORWARD_BUTTON_LABEL" = "Переслать";
@@ -38,7 +38,7 @@
 "ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_CONFIRM_BUTTON" = "Экспортировать отчёт";
 
 /* Users can request a report of their account data. Before they get their account export, they are warned to only share account data with trustworthy sources. This is the message on that warning. */
-"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Передавайте данные учётной записи Signal только тем людям или приложениям, которым вы доверяете.";
+"ACCOUNT_DATA_REPORT_CONFIRM_EXPORT_MESSAGE" = "Передавайте данные учётной записи LetKnow только тем людям или приложениям, которым вы доверяете.";
 
 /* Users can request a report of their account data. If this request fails (probably because of a network connection problem), they will see an error sheet. This is the message on that error. */
 "ACCOUNT_DATA_REPORT_ERROR_MESSAGE" = "Проверьте ваше подключение к интернету и попробуйте ещё раз.";
@@ -62,16 +62,16 @@
 "ACCOUNT_DATA_REPORT_EXPORT_REPORT_BUTTON" = "Экспортировать отчёт";
 
 /* Users can request a report of their account data. This text appears at the bottom of this screen, offering more information. */
-"ACCOUNT_DATA_REPORT_FOOTER" = "Ваш отчёт создаётся только во время экспорта и не сохраняется Signal на вашем устройстве.";
+"ACCOUNT_DATA_REPORT_FOOTER" = "Ваш отчёт создаётся только во время экспорта и не сохраняется LetKnow на вашем устройстве.";
 
 /* Users can request a report of their account data. This is the subtitle on the screen where they do this, giving them more information. */
-"ACCOUNT_DATA_REPORT_SUBTITLE" = "Загружайте и экспортируйте отчёт о данных вашей учётной записи Signal. Данный отчёт не содержит никаких сообщений или медиафайлов.";
+"ACCOUNT_DATA_REPORT_SUBTITLE" = "Загружайте и экспортируйте отчёт о данных вашей учётной записи LetKnow. Данный отчёт не содержит никаких сообщений или медиафайлов.";
 
 /* Users can request a report of their account data. This is the title on the screen where they do this. */
 "ACCOUNT_DATA_REPORT_TITLE" = "Данные вашей учётной записи";
 
 /* Label for 'invite' button in contact view. */
-"ACTION_INVITE" = "Пригласить в Signal";
+"ACTION_INVITE" = "Пригласить в LetKnow";
 
 /* Label for button that lets you send a message to a contact. */
 "ACTION_SEND_MESSAGE" = "Отправить сообщение";
@@ -89,7 +89,7 @@
 "ACTION_VIDEO_CALL" = "Видеозвонок";
 
 /* Label for 'voice call' button in contact view. */
-"ACTION_VOICE_CALL" = "Звонок Signal";
+"ACTION_VOICE_CALL" = "Звонок в LetKnow";
 
 /* The title for the 'add group members' view. */
 "ADD_GROUP_MEMBERS_VIEW_TITLE" = "Добавить участников";
@@ -215,16 +215,16 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Обновитесь";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal не может запуститься. Пожалуйста, отправьте журнал отладки на support@signal.org, чтобы мы смогли исправить эту проблему.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "LetKnow не может запуститься. Пожалуйста, отправьте журнал отладки на support@letKnow.com, чтобы мы смогли исправить эту проблему.";
 
 /* Button to try launching the app even though the last launch failed */
-"APP_LAUNCH_FAILURE_CONTINUE" = "Попробовать открыть Signal";
+"APP_LAUNCH_FAILURE_CONTINUE" = "Попробовать открыть LetKnow";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Пожалуйста, отправьте журнал отладки на support@signal.org, чтобы мы смогли исправить эту проблему.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Пожалуйста, отправьте журнал отладки на support@letKnow.com, чтобы мы смогли исправить эту проблему.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Не удалось открыть Signal";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Не удалось открыть LetKnow";
 
 /* Error indicating that the app could not launch because the database could not be loaded. */
 "APP_LAUNCH_FAILURE_COULD_NOT_LOAD_DATABASE" = "Не удалось загрузить базу данных";
@@ -245,10 +245,10 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Неизвестная версия базы данных.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "У приложения Signal возникла проблема при попытке запуска. Пожалуйста, отправьте журнал отладки по адресу support@signal.org, чтобы помочь решить эту проблему.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "У приложения LetKnow возникла проблема при попытке запуска. Пожалуйста, отправьте журнал отладки по адресу support@letKnow.com, чтобы помочь решить эту проблему.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Не удалось открыть Signal";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Не удалось открыть LetKnow";
 
 /* Error description indicating that the app crashed because there was low storage space available on the device. */
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_MESSAGE" = "Signal не удалось открыть, потому что на вашем устройстве недостаточно места. Для использования Signal освободите место, управляя вашим хранилищем в Настройках.";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Недостаточно места в хранилище";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Данные, перенесённые с вашего старого устройства, не удалось восстановить. Пожалуйста, отправьте журнал отладки на support@signal.org, чтобы мы смогли исправить эту проблему. Если вы переустановите Signal, ваша история сообщений может быть утеряна.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "Данные, перенесённые с вашего старого устройства, не удалось восстановить. Пожалуйста, отправьте журнал отладки на support@letKnow.com, чтобы мы смогли исправить эту проблему. Если вы переустановите LetKnow, ваша история сообщений может быть утеряна.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Не удалось завершить перенос";
@@ -1280,7 +1280,7 @@
 "CALL_AUDIO_MISSED_WEEK_NOTIFICATION_BODY_FORMAT" = "📞 Пропущенный аудиозвонок в %1$@";
 
 /* Alert message when calling and permissions for microphone are missing */
-"CALL_AUDIO_PERMISSION_MESSAGE" = "Разрешите Signal использовать микрофон в приложении «Настройки», чтобы совершать звонки и записывать голосовые сообщения в Signal.";
+"CALL_AUDIO_PERMISSION_MESSAGE" = "Разрешите LetKnow использовать микрофон в приложении «Настройки», чтобы совершать звонки и записывать голосовые сообщения в LetKnow.";
 
 /* Alert title when calling and permissions for microphone are missing */
 "CALL_AUDIO_PERMISSION_TITLE" = "Требуется доступ к микрофону";
@@ -1346,7 +1346,7 @@
 "CALL_LINK_JOIN_REQUEST_PROMPT" = "Хотел(-а) бы присоединиться…";
 
 /* Shown in a message bubble when you send a call link in a Signal chat */
-"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Используйте эту ссылку, чтобы присоединиться к звонку Signal";
+"CALL_LINK_LINK_PREVIEW_DESCRIPTION" = "Используйте эту ссылку, чтобы присоединиться к звонку LetKnow";
 
 /* Text that appears on a toast in a call lobby before joining a call link informing the user what information will be shared with other call members when they have phone number sharing turned off. */
 "CALL_LINK_LOBBY_SHARING_INFO_PHONE_NUMBER_SHARING_OFF" = "Все, кто присоединится к этому звонку по ссылке, будут видеть ваше имя и фото.";
@@ -1370,7 +1370,7 @@
 "CALL_LINK_REQUIRE_APPROVAL" = "Требуется одобрение администратора";
 
 /* Button to open UI to share a Call Link with someone on Signal. */
-"CALL_LINK_SHARE_VIA_SIGNAL" = "Поделиться ссылкой через Signal";
+"CALL_LINK_SHARE_VIA_SIGNAL" = "Поделиться ссылкой через LetKnow";
 
 /* Button to open the system share sheet to share a Call Link. */
 "CALL_LINK_SHARE_VIA_SYSTEM" = "Поделиться ссылкой";
@@ -1556,10 +1556,10 @@
 "CALLING_MEMBER_VIEW_YOUR_CAMERA_IS_OFF" = "Ваша камера отключена";
 
 /* The generic name used for calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Пользователь Signal";
+"CALLKIT_ANONYMOUS_CONTACT_NAME" = "Пользователь LetKnow";
 
 /* The generic name used for group calls if CallKit privacy is enabled */
-"CALLKIT_ANONYMOUS_GROUP_NAME" = "Группа Signal";
+"CALLKIT_ANONYMOUS_GROUP_NAME" = "Группа LetKnow";
 
 /* Title for the calls list view. */
 "CALLS_LIST_TITLE" = "Звонки";
@@ -1976,13 +1976,13 @@
 "COMPOSE_SCREEN_LIMITED_CONTACTS_CTA" = "Управлять";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "Signal имеет ограниченный доступ к вашим системным контактам";
+"COMPOSE_SCREEN_LIMITED_CONTACTS_PERMISSION" = "LetKnow имеет ограниченный доступ к вашим системным контактам";
 
 /* Button to open settings from an empty compose-screen contact picker. */
 "COMPOSE_SCREEN_MISSING_CONTACTS_CTA" = "Открыть настройки";
 
 /* Multi-line label explaining why compose-screen contact picker is empty. */
-"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Вы можете разрешить доступ к контактам в приложении «Настройки», чтобы видеть, какие из ваших контактов являются пользователями Signal.";
+"COMPOSE_SCREEN_MISSING_CONTACTS_PERMISSION" = "Вы можете разрешить доступ к контактам в приложении «Настройки», чтобы видеть, какие из ваших контактов являются пользователями LetKnow.";
 
 /* Configure reactions title text */
 "CONFIGURE_REACTIONS" = "Настроить реакции";
@@ -2024,10 +2024,10 @@
 "CONTACT_ABOUT_SHEET_PROFILE_NAMES_EDUCATION" = "Имена профилей не проверяются";
 
 /* Message for a tooltip that appears above a parenthesized name for another user, indicating that that name is the name the other user set for themself. Embeds {{name}} */
-"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "«%1$@» — это имя профиля, которое данный человек установил для себя в Signal.";
+"CONTACT_ABOUT_SHEET_SECONDARY_NAME_TOOLTIP_MESSAGE" = "«%1$@» — это имя профиля, которое данный человек установил для себя в LetKnow.";
 
 /* A label indicating a user is a signal connection. */
-"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Контакт Signal";
+"CONTACT_ABOUT_SHEET_SIGNAL_CONNECTION_LABEL" = "Контакт LetKnow";
 
 /* The title for a contact 'about' sheet. */
 "CONTACT_ABOUT_SHEET_TITLE" = "О контакте";
@@ -2069,7 +2069,7 @@
 "CONTACT_NOTE_TITLE" = "Заметка";
 
 /* Body for contact permission action sheet */
-"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Чтобы найти знакомых в Signal:";
+"CONTACT_PERMISSION_ACTION_SHEET_2_BODY" = "Чтобы найти знакомых в LetKnow:";
 
 /* First step for contact permission action sheet */
 "CONTACT_PERMISSION_ACTION_SHEET_2_STEP_ONE" = "Нажмите «Перейти в Настройки» ниже";
@@ -2183,7 +2183,7 @@
 "CONTACT_SUPPORT_FILTER_SOMETHING_NOT_WORKING_SHORT" = "Что-то не работает";
 
 /* Alert body */
-"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "Signal не смог завершить ваш запрос в поддержку.";
+"CONTACT_SUPPORT_PROMPT_ERROR_ALERT_BODY" = "LetKnow не смог завершить ваш запрос в поддержку.";
 
 /* button text */
 "CONTACT_SUPPORT_PROMPT_ERROR_TRY_AGAIN" = "Попробовать ещё раз";
@@ -2609,10 +2609,10 @@
 "DATABASE_RECOVERY_MORE_STORAGE_SPACE_NEEDED_TITLE" = "Недостаточно места в хранилище";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This is the description on the screen where we show an error message. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "История ваших сообщений не может быть восстановлена. Вы сможете снова пользоваться Signal после переустановки. Отправьте журнал отладки, чтобы мы могли лучше понять, что пошло не так.";
+"DATABASE_RECOVERY_RECOVERY_FAILED_DESCRIPTION" = "История ваших сообщений не может быть восстановлена. Вы сможете снова пользоваться LetKnow после переустановки. Отправьте журнал отладки, чтобы мы могли лучше понять, что пошло не так.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) This button lets them delete all of their data. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Переустановить Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_BUTTON" = "Переустановить LetKnow";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the final button they will press before their data is reset. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_CONFIRM" = "Сбросить";
@@ -2621,7 +2621,7 @@
 "DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_DESCRIPTION" = "Будут удалены информация вашей учётной записи, ваш профиль и все ваши сообщения. После завершения этого процесса приложение закроется.";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) If they want to delete the app and restart, they will be presented with a confirmation dialog. This is the title of that dialog. */
-"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Переустановить Signal";
+"DATABASE_RECOVERY_RECOVERY_FAILED_RESET_APP_CONFIRMATION_TITLE" = "Переустановить LetKnow";
 
 /* The user has tried to recover their data after it was lost due to corruption. (They have not been hacked.) They were asked to submit a debug log. This is the button that submits this log. */
 "DATABASE_RECOVERY_RECOVERY_FAILED_SUBMIT_DEBUG_LOG_BUTTON" = "Отправить журнал отладки";
@@ -2702,7 +2702,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_ACTION" = "Удалить учётную запись";
 
 /* Title for the action sheet message of the 'delete account confirmation' view controller. */
-"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Ваша учётная запись Signal будет удалена, и приложение будет сброшено. Приложение закроется после завершения этого процесса.";
+"DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_MESSAGE" = "Ваша учётная запись LetKnow будет удалена, и приложение будет сброшено. Приложение закроется после завершения этого процесса.";
 
 /* Title for the action sheet confirmation title of the 'delete account confirmation' view controller. */
 "DELETE_ACCOUNT_CONFIRMATION_ACTION_SHEEET_TITLE" = "Вы действительно хотите удалить свою учётную запись?";
@@ -2726,7 +2726,7 @@
 "DELETE_ACCOUNT_CONFIRMATION_PHONE_NUMBER_TITLE" = "Номер телефона";
 
 /* Section header */
-"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Подтвердите свой номер Signal";
+"DELETE_ACCOUNT_CONFIRMATION_SECTION_TITLE" = "Подтвердите свой номер LetKnow";
 
 /* Title for the 'delete account' confirmation view. */
 "DELETE_ACCOUNT_CONFIRMATION_TITLE" = "Удалить учётную запись";
@@ -2774,7 +2774,7 @@
 "DELETED_USER" = "Удалённая учётная запись";
 
 /* Notification warning the user that they have been de-registered. */
-"DEREGISTRATION_NOTIFICATION" = "Ваш сеанс работы с Signal на этом устройстве был завершён.";
+"DEREGISTRATION_NOTIFICATION" = "Ваш сеанс работы с LetKnow на этом устройстве был завершён.";
 
 /* Button that lets users re-register using the same phone number. */
 "DEREGISTRATION_REREGISTER_BUTTON" = "Повторно зарегистрироваться";
@@ -2783,7 +2783,7 @@
 "DEREGISTRATION_REREGISTER_PROMPT_TITLE" = "Зарегистрировать этот номер телефона повторно?";
 
 /* Label warning the user that they have been de-registered. */
-"DEREGISTRATION_WARNING" = "Это устройство больше не зарегистрировано. Это может быть вызвано тем, что вы зарегистрировали свой номер телефона в Signal на другом устройстве.";
+"DEREGISTRATION_WARNING" = "Это устройство больше не зарегистрировано. Это может быть вызвано тем, что вы зарегистрировали свой номер телефона в LetKnow на другом устройстве.";
 
 /* If the user has been deregistered, they'll see a warning. This is This is the call to action on that warning. */
 "DEREGISTRATION_WARNING_ACTION_TITLE" = "Перерегистрируйте устройство";
@@ -2837,7 +2837,7 @@
 "DEVICE_TRANSFER_CHOICE_TRANSFER_LINKED_TITLE" = "Перенос с другого iPad";
 
 /* An error indicating that the other device closed signal mid-transfer and it could not complete */
-"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Не удалось завершить перенос. Убедитесь, что Signal открыт на обоих ваших устройствах, и попробуйте ещё раз.";
+"DEVICE_TRANSFER_ERROR_BACKGROUNDED" = "Не удалось завершить перенос. Убедитесь, что LetKnow открыт на обоих ваших устройствах, и попробуйте ещё раз.";
 
 /* An error indicating that something went wrong with the transfer and it could not complete */
 "DEVICE_TRANSFER_ERROR_GENERIC" = "Не удалось завершить перенос. Убедитесь, что ваши устройства находятся рядом друг с другом, и попробуйте ещё раз.";
@@ -2846,10 +2846,10 @@
 "DEVICE_TRANSFER_ERROR_NOT_ENOUGH_SPACE" = "Недостаточно свободного места, чтобы завершить перенос";
 
 /* An error indicating the user must update their device before trying to transfer. */
-"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Обновитесь до новейшей версии Signal и попробуйте ещё раз";
+"DEVICE_TRANSFER_ERROR_UNSUPPORTED_VERSION" = "Обновитесь до новейшей версии LetKnow и попробуйте ещё раз";
 
 /* The explanation on the view that shows receiving progress */
-"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Держите оба устройства рядом друг с другом. Не выключайте ни одно из них и оставьте Signal открытым. Переносы защищены сквозным шифрованием.";
+"DEVICE_TRANSFER_RECEIVING_EXPLANATION" = "Держите оба устройства рядом друг с другом. Не выключайте ни одно из них и оставьте LetKnow открытым. Переносы защищены сквозным шифрованием.";
 
 /* The title on the view that shows receiving progress */
 "DEVICE_TRANSFER_RECEIVING_TITLE" = "Получение данных";
@@ -2876,7 +2876,7 @@
 "DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING" = "Идёт перенос";
 
 /* Description in the progress view displayed during device transfer. */
-"DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING_DESCRIPTION" = "Держите оба устройства рядом друг с другом. Не выключайте устройства и оставьте Signal открытым. Переносы защищены сквозным шифрованием.";
+"DEVICE_TRANSFER_STATUS_NEW_DEVICE_TRANSFERRING_DESCRIPTION" = "Держите оба устройства рядом друг с другом. Не выключайте устройства и оставьте LetKnow открытым. Переносы защищены сквозным шифрованием.";
 
 /* Status message on old device when cancelling transfer. */
 "DEVICE_TRANSFER_STATUS_OLD_DEVICE_CANCELLING" = "Отмена подключения к новому iPhone…";
@@ -3347,13 +3347,13 @@
 "EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_BODY" = "Вы можете предоставить доступ в приложении «Настройки».";
 
 /* Alert title for when the user has just tried to edit a contacts after declining to give Signal contacts permissions */
-"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "Signal требуется доступ к контактам для редактирования информации контактов";
+"EDIT_CONTACT_WITHOUT_CONTACTS_PERMISSION_ALERT_TITLE" = "LetKnow требуется доступ к контактам для редактирования информации контактов";
 
 /* The navbar title for the 'update group' view. */
 "EDIT_GROUP_DEFAULT_TITLE" = "Редактировать группу";
 
 /* Error message indicating the a user can't be added to a group. */
-"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Этот пользователь не может быть добавлен в группу, пока он не обновит Signal.";
+"EDIT_GROUP_ERROR_CANNOT_ADD_MEMBER" = "Этот пользователь не может быть добавлен в группу, пока он не обновит LetKnow.";
 
 /* Error message indicating that an avatar image is invalid and cannot be used. */
 "EDIT_GROUP_ERROR_INVALID_AVATAR" = "Недействительное фото.";
@@ -3383,10 +3383,10 @@
 "EMAIL_INVITE_BODY" = "Привет!\n\nВ последнее время я использую Signal для сохранения конфиденциальности своих чатов на iPhone. Предлагаю установить это приложение и тебе, чтобы быть уверенными, что только мы с тобой можем читать наши сообщения и слышать наши разговоры.\n\nSignal доступен для iPhone, Android и ПК. Скачай его здесь: %1$@\n\nSignal работает так же как мессенджер, который ты уже используешь. Мы можем отправлять картинки и видео, делать звонки и создавать групповые чаты. И главное — никто кроме нас ничего не увидит, даже разработчики Signal!\n\nПодробнее о Signal тут: %2$@";
 
 /* subject of email sent to contacts when inviting to install Signal */
-"EMAIL_INVITE_SUBJECT" = "Давай перейдем на Signal";
+"EMAIL_INVITE_SUBJECT" = "Давай перейдем на LetKnow";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Ваше устройство не настроено для отправки электронной почты. Чтобы отправить запрос в поддержку, настройте электронную почту на своём устройстве или отправьте электронное письмо на адрес support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Ваше устройство не настроено для отправки электронной почты. Чтобы отправить запрос в поддержку, настройте электронную почту на своём устройстве или отправьте электронное письмо на адрес support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "Электронная почта недоступна";
@@ -3422,7 +3422,7 @@
 "EMOJI_CATEGORY_TRAVEL_NAME" = "Путешествия и места";
 
 /* Full width label displayed when attempting to compose message */
-"EMPTY_CONTACTS_LABEL_LINE1" = "Ни у кого из ваших контактов нет Signal.";
+"EMPTY_CONTACTS_LABEL_LINE1" = "Ни у кого из ваших контактов нет LetKnow.";
 
 /* Full width label displayed when attempting to compose message */
 "EMPTY_CONTACTS_LABEL_LINE2" = "Давайте пригласим кого-нибудь";
@@ -3512,7 +3512,7 @@
 "ERROR_DESCRIPTION_UNKNOWN_ERROR" = "Произошла неизвестная ошибка.";
 
 /* Error message when attempting to send message */
-"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Не удалось отправить сообщение, так как этот человек больше не использует Signal.";
+"ERROR_DESCRIPTION_UNREGISTERED_RECIPIENT" = "Не удалось отправить сообщение, так как этот человек больше не использует LetKnow.";
 
 /* Error message indicating that attachment upload(s) failed. */
 "ERROR_MESSAGE_ATTACHMENT_UPLOAD_FAILED" = "Не удалось загрузить вложение.";
@@ -3557,10 +3557,10 @@
 "ERROR_NETWORK_FAILURE" = "Ошибка сети";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Пожалуйста, помогите нам улучшить Signal, сообщив об этой ошибке по адресу support@signal.org вместе с журналом отладки с вашего устройства: %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Пожалуйста, помогите нам улучшить LetKnow, сообщив об этой ошибке по адресу support@letKnow.com вместе с журналом отладки с вашего устройства: %1$@";
 
 /* Format string for an error alert notification title. */
-"ERROR_NOTIFICATION_TITLE" = "Бета-версия Signal: произошла ошибка";
+"ERROR_NOTIFICATION_TITLE" = "Бета-версия LetKnow: произошла ошибка";
 
 /* Error indicating a send failure due to a delinked application. */
 "ERROR_SENDING_DELINKED" = "Это устройство больше не привязано. Пожалуйста, повторно привяжите его, чтобы продолжить обмен сообщениями.";
@@ -3569,7 +3569,7 @@
 "ERROR_SENDING_DEREGISTERED" = "Это устройство больше не зарегистрировано. Пожалуйста, повторно зарегистрируйтесь, чтобы продолжить обмен сообщениями.";
 
 /* Error indicating a send failure due to an expired application. */
-"ERROR_SENDING_EXPIRED" = "Ваша версия Signal устарела. Пожалуйста, обновитесь, чтобы продолжить обмен сообщениями.";
+"ERROR_SENDING_EXPIRED" = "Ваша версия LetKnow устарела. Пожалуйста, обновитесь, чтобы продолжить обмен сообщениями.";
 
 /* Format string for 'unregistered user' error. Embeds {{the unregistered user's name or signal id}}. */
 "ERROR_UNREGISTERED_USER_FORMAT" = "Незарегистрированный пользователь: %1$@";
@@ -3581,16 +3581,16 @@
 "EXIT_REREGISTRATION" = "Выйти из регистрации";
 
 /* Label notifying the user that the app has expired. */
-"EXPIRATION_ERROR" = "Эта версия Signal устарела. Обновитесь, чтобы отправлять и получать сообщения.";
+"EXPIRATION_ERROR" = "Эта версия LetKnow устарела. Обновитесь, чтобы отправлять и получать сообщения.";
 
 /* If the user's app is too old, they'll be shown a warning asking them to upgrade. This is the text on the warning, and tapping it will open the App Store page for Signal. */
 "EXPIRATION_WARNING_ACTION_TITLE" = "Обновить";
 
 /* Label warning the user that the app will expire soon. Embeds {{date}}. */
-"EXPIRATION_WARNING_SOON" = "Эта версия Signal перестанет работать %1$@. Обновитесь для продолжения обмена сообщениями.";
+"EXPIRATION_WARNING_SOON" = "Эта версия LetKnow перестанет работать %1$@. Обновитесь для продолжения обмена сообщениями.";
 
 /* Label warning the user that the app will expire today. */
-"EXPIRATION_WARNING_TODAY" = "Эта версия Signal перестанет работать сегодня. Обновитесь для продолжения обмена сообщениями.";
+"EXPIRATION_WARNING_TODAY" = "Эта версия LetKnow перестанет работать сегодня. Обновитесь для продолжения обмена сообщениями.";
 
 /* action sheet header when re-sending message which failed because of an invalid key signature */
 "FAILED_SENDING_BECAUSE_INVALID_KEY_SIGNATURE" = "Не удалось отправить сообщение, так как %1$@ необходимо обновить и открыть Signal.";
@@ -3935,10 +3935,10 @@
 "GROUP_CALL_WILL_NOTIFY_TWO_PEOPLE_FORMAT" = "%1$@ и %2$@ будут уведомлены";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there is one other person in the group. Embeds {member name} */
-"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "Signal будет звонить у %1$@";
+"GROUP_CALL_WILL_RING_ONE_PERSON_FORMAT" = "LetKnow будет звонить у %1$@";
 
 /* Text shown before the user starts a group call if the user has enabled ringing and there are two other people in the group. Embeds {{ %1$@ participant1, %2$@ participant2 }} */
-"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "Signal будет звонить у %1$@ и %2$@";
+"GROUP_CALL_WILL_RING_TWO_PEOPLE_FORMAT" = "LetKnow будет звонить у %1$@ и %2$@";
 
 /* Text explaining that you are in the group call. */
 "GROUP_CALL_YOU_ARE_HERE" = "Вы в групповом звонке";
@@ -4151,7 +4151,7 @@
 "GROUP_LINK_VIEW_SHARE_LINK_VIA_QR_CODE" = "QR-код";
 
 /* Label for the 'share group link via Signal' button in the 'group link' view. */
-"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Поделиться через Signal";
+"GROUP_LINK_VIEW_SHARE_LINK_VIA_SIGNAL" = "Поделиться через LetKnow";
 
 /* Message for the 'share group link' action sheet in the 'group link' view. */
 "GROUP_LINK_VIEW_SHARE_SHEET_MESSAGE" = "Любой, у кого есть эта ссылка, может просмотреть имя этой группы и её участников, а также отправить запрос на присоединение. Делитесь ей с людьми, которым вы доверяете.";
@@ -4577,13 +4577,13 @@
 "HOME_VIEW_DRAFT_PREFIX" = "Черновик: ";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have 1 Signal contact.  Embeds {{The name of 1 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Некоторые из ваших контактов уже в Signal, включая %1$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_1_CONTACT_FORMAT" = "Некоторые из ваших контактов уже в LetKnow, включая %1$@.";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have 2 Signal contacts.  Embeds {{The names of 2 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Некоторые из ваших контактов уже в Signal, включая %1$@ и %2$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_2_CONTACTS_FORMAT" = "Некоторые из ваших контактов уже в LetKnow, включая %1$@ и %2$@.";
 
 /* Format string for a label offering to start a new conversation with your contacts, if you have at least 3 Signal contacts.  Embeds {{The names of 3 of your Signal contacts}}. */
-"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Некоторые из ваших контактов уже в Signal, включая %1$@, %2$@ и %3$@.";
+"HOME_VIEW_FIRST_CONVERSATION_OFFER_3_CONTACTS_FORMAT" = "Некоторые из ваших контактов уже в LetKnow, включая %1$@, %2$@ и %3$@.";
 
 /* A label offering to start a new conversation with your contacts, if you have no Signal contacts. */
 "HOME_VIEW_FIRST_CONVERSATION_OFFER_NO_CONTACTS" = "Начните свой первый чат здесь.";
@@ -4679,7 +4679,7 @@
 "INACTIVE_LINKED_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Неактивное связанное устройство";
 
 /* Body for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "Чтобы ваша учётная запись оставалась активной, откройте приложение Signal на основном устройстве.";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_BODY" = "Чтобы ваша учётная запись оставалась активной, откройте приложение LetKnow на основном устройстве.";
 
 /* Title for a button in an in-app megaphone about a user's inactive primary device, temporarily dismissing the megaphone. */
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_GOT_IT_BUTTON" = "Понятно";
@@ -4688,7 +4688,7 @@
 "INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_LEARN_MORE_BUTTON" = "Узнать больше";
 
 /* Title for an in-app megaphone about a user's inactive primary device. */
-"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Откройте Signal на своем телефоне";
+"INACTIVE_PRIMARY_DEVICE_REMINDER_MEGAPHONE_TITLE" = "Откройте LetKnow на своем телефоне";
 
 /* Label reminding the user that they are in archive mode, and that muted chats remain archived when they receive a new message. */
 "INBOX_VIEW_ARCHIVE_MODE_MUTED_CHATS_REMINDER" = "Архивированные чаты с отключённым звуком будут оставаться архивированными, даже если будет получено новое сообщение.";
@@ -4724,10 +4724,10 @@
 "INFO_MESSAGE_BLOCKED_OTHER_USER" = "Вы заблокировали этого человека.";
 
 /* Indicates that a previously-removed recipient has been added back to the current user's contacts. */
-"INFO_MESSAGE_CONTACT_REINSTATED" = "Этот человек был снова добавлен в ваш список контактов Signal.";
+"INFO_MESSAGE_CONTACT_REINSTATED" = "Этот человек был снова добавлен в ваш список контактов LetKnow.";
 
 /* Indicates that the recipient has been removed from the current user's contacts and that messaging them will re-add them. */
-"INFO_MESSAGE_CONTACT_REMOVED" = "Вы удалили этого человека из списка контактов Signal. Отправив ему сообщение, вы добавите его обратно.";
+"INFO_MESSAGE_CONTACT_REMOVED" = "Вы удалили этого человека из списка контактов LetKnow. Отправив ему сообщение, вы добавите его обратно.";
 
 /* When you start a chat with someone and then later learn their profile name, we insert an in-chat message with this string to record the identifier you originally used to contact them. Embeds {{ the identifier, either a phone number or a username }}. */
 "INFO_MESSAGE_LEARNED_PROFILE_KEY" = "Вы начали этот чат с %1$@.";
@@ -4766,7 +4766,7 @@
 "INFO_MESSAGE_USER_CHANGED_PHONE_NUMBER_FORMAT" = "%1$@ изменил(-а) свой номер телефона.";
 
 /* Shown in inbox and conversation when a user joins Signal, embeds the new user's {{contact name}} */
-"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ теперь в Signal!";
+"INFO_MESSAGE_USER_JOINED_SIGNAL_BODY_FORMAT" = "%1$@ теперь в LetKnow!";
 
 /* Label at the top of the input text when editing a message */
 "INPUT_TOOLBAR_EDIT_MESSAGE_LABEL" = "Изменить сообщение";
@@ -4793,13 +4793,13 @@
 "INVALID_PROXY_HOST_ERROR" = "Введённый вами адрес прокси недействителен. Пожалуйста, проверьте адрес и попробуйте ещё раз.";
 
 /* Alert body when contacts disabled while trying to invite contacts to signal */
-"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Вы можете разрешить доступ к контактам в приложении «Настройки», чтобы приглашать своих друзей в Signal.";
+"INVITE_FLOW_REQUIRES_CONTACT_ACCESS_BODY" = "Вы можете разрешить доступ к контактам в приложении «Настройки», чтобы приглашать своих друзей в LetKnow.";
 
 /* Alert title when contacts disabled while trying to invite contacts to signal */
 "INVITE_FLOW_REQUIRES_CONTACT_ACCESS_TITLE" = "Разрешите доступ к контактам";
 
 /* Label for the cell that presents the 'invite contacts' workflow. */
-"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Пригласите друзей в Signal";
+"INVITE_FRIENDS_CONTACT_TABLE_BUTTON" = "Пригласите друзей в LetKnow";
 
 /* Header label above a section for more options for adding contacts */
 "INVITE_FRIENDS_CONTACT_TABLE_HEADER" = "Больше";
@@ -4943,7 +4943,7 @@
 "LINK_NEW_DEVICE_AUTHENTICATION_REASON" = "Пройдите аутентификацию для привязки устройства";
 
 /* Body text for a sheet when a user has started linking a device informing them to finish the process on that other device */
-"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Завершите привязку Signal на другом устройстве.";
+"LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_BODY" = "Завершите привязку LetKnow на другом устройстве.";
 
 /* Title for a sheet when a user has started linking a device informing them to finish the process on that other device */
 "LINK_NEW_DEVICE_FINISH_ON_OTHER_DEVICE_SHEET_TITLE" = "Завершите привязку на другом устройстве";
@@ -7604,7 +7604,7 @@
 "REGISTRATION_SCAN_QR_CODE_TITLE" = "Отсканируйте этот код с помощью старого устройства";
 
 /* Tutorial text describing the first step to scanning the restore/transfer QR code with your old phone: opening Signal */
-"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Откройте Signal на старом устройстве";
+"REGISTRATION_SCAN_QR_CODE_TUTORIAL_OPEN_SIGNAL" = "Откройте LetKnow на старом устройстве";
 
 /* Tutorial text describing the third step to scanning the restore/transfer QR code with your old phone: scan the code */
 "REGISTRATION_SCAN_QR_CODE_TUTORIAL_SCAN" = "Отсканируйте этот код с помощью камеры";
@@ -9125,7 +9125,7 @@
 "SHARE_EXTENSION_UNABLE_TO_BUILD_ATTACHMENT_ALERT_TITLE" = "Не удалось подготовить вложение";
 
 /* Title for the 'share extension' view. */
-"SHARE_EXTENSION_VIEW_TITLE" = "Поделиться в Signal";
+"SHARE_EXTENSION_VIEW_TITLE" = "Поделиться в LetKnow";
 
 /* Title of alert indicating sharing suggestions failed to deactivate */
 "SHARING_SUGGESTIONS_DISABLE_ERROR" = "Не удалось отключить предложения.";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Расскажите нам о проблеме: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Пожалуйста, отправьте ваш запрос в поддержку на адрес support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Пожалуйста, отправьте ваш запрос в поддержку на адрес support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Фильтр: %1$@";
@@ -9770,7 +9770,7 @@
 "TRANSFER_COMPLETE_SHEET_TITLE" = "Перенос завершён";
 
 /* Notification prompting the user to relaunch Signal after a device transfer completed. */
-"TRANSFER_RELAUNCH_NOTIFICATION" = "Для начала обмена сообщениями откройте Signal";
+"TRANSFER_RELAUNCH_NOTIFICATION" = "Для начала обмена сообщениями откройте LetKnow";
 
 /* Label for the cancel button in an alert or action sheet. */
 "TXT_CANCEL_TITLE" = "Отменить";

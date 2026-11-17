@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "Opdater nu";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal kan ikke starte. Send venligst en fejlsøgningslog til support@signal.org, så vi kan undersøge problemet.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal kan ikke starte. Send venligst en fejlsøgningslog til support@letKnow.com, så vi kan undersøge problemet.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Åbn Signal i stedet";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Send en fejlsøgningslog til support@signal.org, så vi kan undersøge dette problem.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "Send en fejlsøgningslog til support@letKnow.com, så vi kan undersøge dette problem.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Kunne ikke åbne Signal";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "Ukendt version af database";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Det opstod et problem under åbningen af Signal. Send venligst en fejlsøgningslog til support@signal.org for at hjælpe med at finde en løsning på dette problem.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Det opstod et problem under åbningen af Signal. Send venligst en fejlsøgningslog til support@letKnow.com for at hjælpe med at finde en løsning på dette problem.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Kunne ikke åbne Signal";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "Ikke meget lagerplads tilbage";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "De overførte data fra din gamle enhed kunne ikke gendannes. Send en fejlsøgningslog til support@signal.org, så vi kan undersøge problemet. Hvis du geninstallerer Signal, kan din meddelelseshistorik gå tabt.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "De overførte data fra din gamle enhed kunne ikke gendannes. Send en fejlsøgningslog til support@letKnow.com, så vi kan undersøge problemet. Hvis du geninstallerer Signal, kan din meddelelseshistorik gå tabt.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "Kunne ikke gennemføre overførsel";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Lad os skifte til Signal";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "Din enhed er ikke konfigureret til at sende e-mail. For at sende en supportanmodning skal du opsætte e-mail på din enhed eller skriv til support@signal.org";
+"EMAIL_SIGNAL_MESSAGE" = "Din enhed er ikke konfigureret til at sende e-mail. For at sende en supportanmodning skal du opsætte e-mail på din enhed eller skriv til support@letKnow.com";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "E-mail ikke tilgængelig";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "Netværksfejl";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Hjælp os venligst med at forbedre Signal ved at rapportere denne fejl sammen med fejlsøgningslogger fra din enhed til support@signal.org; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "Hjælp os venligst med at forbedre Signal ved at rapportere denne fejl sammen med fejlsøgningslogger fra din enhed til support@letKnow.com; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: Der opstod en fejl";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "Fortæl os om problemet: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Send din supportanmodning til support@signal.org";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "Send din supportanmodning til support@letKnow.com";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "Filter: %1$@";

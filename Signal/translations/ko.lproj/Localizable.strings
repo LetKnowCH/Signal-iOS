@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "지금 업데이트";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal을 시작할 수 없습니다. 문제 해결을 위해 디버그 로그를 support@signal.org로 보내주세요.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal을 시작할 수 없습니다. 문제 해결을 위해 디버그 로그를 support@letKnow.com로 보내주세요.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "대신 Signal 열기";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "우리가 이 문제를 해결할 수 있도록 support@signal.org로 디버그 로그를 보내주세요.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "우리가 이 문제를 해결할 수 있도록 support@letKnow.com로 디버그 로그를 보내주세요.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal을 열 수 없음";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "알 수 없는 데이터베이스 버전입니다.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal을 여는 도중 오류가 발생했습니다. 문제 해결을 위해 support@signal.org에 디버그 로그를 보내주세요.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal을 여는 도중 오류가 발생했습니다. 문제 해결을 위해 support@letKnow.com에 디버그 로그를 보내주세요.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal을 열 수 없음";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "저장공간 부족";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "기존 기기에서 가져온 데이터를 복구하지 못했습니다. 문제 해결을 위해 디버그 로그를 support@signal.org로 보내주세요. Signal을 재설치할 경우 기존 메시지 기록이 사라질 수 있으니 참고해 주세요.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "기존 기기에서 가져온 데이터를 복구하지 못했습니다. 문제 해결을 위해 디버그 로그를 support@letKnow.com로 보내주세요. Signal을 재설치할 경우 기존 메시지 기록이 사라질 수 있으니 참고해 주세요.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "이전을 완료할 수 없음";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "Signal로 같이 옮겨요";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "이 기기에서는 이메일을 보낼 수 있도록 설정되어 있지 않습니다. 지원 요청을 보내려면 이 기기에서 이메일을 보낼 수 있도록 설정하거나, support@signal.org 주소로 이메일을 보내주세요.";
+"EMAIL_SIGNAL_MESSAGE" = "이 기기에서는 이메일을 보낼 수 있도록 설정되어 있지 않습니다. 지원 요청을 보내려면 이 기기에서 이메일을 보낼 수 있도록 설정하거나, support@letKnow.com 주소로 이메일을 보내주세요.";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "이메일 이용 불가";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "네트워크 오류";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "장치의 디버그 로그와 함께 support@signal.org에 이 오류(%1$@)를 보고하여 Signal 서비스를 개선할 수 있도록 도와주세요.";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "장치의 디버그 로그와 함께 support@letKnow.com에 이 오류(%1$@)를 보고하여 Signal 서비스를 개선할 수 있도록 도와주세요.";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal 베타: 오류 발생";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "문제에 대해 알려주세요. ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "support@signal.org 이메일 주소로 지원 요청을 보내주세요.";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "support@letKnow.com 이메일 주소로 지원 요청을 보내주세요.";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "필터: %1$@";

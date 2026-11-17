@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "અત્યારે અપડેટ કરો";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal લોન્ચ કરી શકાતું નથી. કૃપા કરીને support@signal.org પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાને નિવારણ કરી શકીએ.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signal લોન્ચ કરી શકાતું નથી. કૃપા કરીને support@letKnow.com પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાને નિવારણ કરી શકીએ.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "તેના બદલે Signal ખોલો";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "કૃપા કરીને support@signal.org પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાનું નિવારણ કરી શકીએ.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "કૃપા કરીને support@letKnow.com પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાનું નિવારણ કરી શકીએ.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal ખોલી ન શક્યા";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "અજાણ ડેટાબેઝ વર્ઝન.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal ખોલવાનો પ્રયાસ કરતી વખતે એક સમસ્યા આવી હતી. આ સમસ્યાનું નિવારણ કરવામાં સહાયતા માટે કૃપા કરીને support@signal.orgને એક ડીબગ લૉગ મોકલો.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal ખોલવાનો પ્રયાસ કરતી વખતે એક સમસ્યા આવી હતી. આ સમસ્યાનું નિવારણ કરવામાં સહાયતા માટે કૃપા કરીને support@letKnow.comને એક ડીબગ લૉગ મોકલો.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal ખોલી શક્યા નથી";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "સ્ટોરેજ સ્પેસ ઓછી છે";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "તમારા જૂના ડિવાઇસમાંથી ટ્રાન્સફર કરેલ ડેટા રિસ્ટોર કરી શકાયો નહીં. કૃપા કરીને support@signal.org પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાનું નિવારણ કરી શકીએ. જો તમે Signal ને ફરીથી ઇન્સ્ટોલ કરો છો તો તમે તમારી મેસેજ હિસ્ટ્રી ગુમાવી શકો છો";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "તમારા જૂના ડિવાઇસમાંથી ટ્રાન્સફર કરેલ ડેટા રિસ્ટોર કરી શકાયો નહીં. કૃપા કરીને support@letKnow.com પર ડિબગ લૉગ મોકલો જેથી અમે આ સમસ્યાનું નિવારણ કરી શકીએ. જો તમે Signal ને ફરીથી ઇન્સ્ટોલ કરો છો તો તમે તમારી મેસેજ હિસ્ટ્રી ગુમાવી શકો છો";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "ટ્રાન્સફર પૂર્ણ કરી શકાયું નથી";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "ચાલો Signal પર સ્વિચ કરીએ";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "તમારું ડિવાઇસ ઇમેઇલ મોકલવા માટે કન્ફિગર કરેલ નથી. સપોર્ટ વિનંતી મોકલવા માટે, તમારા ડિવાઇસ પર ઇમેઇલ સેટ કરો અથવા support@signal.orgને ઇમેઇલ કરો";
+"EMAIL_SIGNAL_MESSAGE" = "તમારું ડિવાઇસ ઇમેઇલ મોકલવા માટે કન્ફિગર કરેલ નથી. સપોર્ટ વિનંતી મોકલવા માટે, તમારા ડિવાઇસ પર ઇમેઇલ સેટ કરો અથવા support@letKnow.comને ઇમેઇલ કરો";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "ઇમેઇલ અનુપલબ્ધ છે";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "નેટવર્ક એરર";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "કૃપા કરીને આ ત્રુટિને ડીબગ લૉગ સાથે તમારા ડિવાઇસ પરથી support@signal.orgને રિપોર્ટ કરીને Signalને બહેતર બનાવવામાં મદદ કરો; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "કૃપા કરીને આ ત્રુટિને ડીબગ લૉગ સાથે તમારા ડિવાઇસ પરથી support@letKnow.comને રિપોર્ટ કરીને Signalને બહેતર બનાવવામાં મદદ કરો; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal બીટા: એક ત્રુટિ આવી";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "અમને સમસ્યા વિશે કહો: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "કૃપા કરીને support@signal.orgને તમારી સપોર્ટ સંબંધી વિનંતી ઇમેઇલ કરો";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "કૃપા કરીને support@letKnow.comને તમારી સપોર્ટ સંબંધી વિનંતી ઇમેઇલ કરો";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "ફિલ્ટર: %1$@";

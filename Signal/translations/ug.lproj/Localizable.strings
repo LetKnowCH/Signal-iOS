@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "ھازىر يېڭىلاڭ";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "‫Signal قوزغىلالمىدى. support@signal.org غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "‫Signal قوزغىلالمىدى. support@letKnow.com غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "ئۇنىڭ ئورنىغا Signal نى ئېچىش";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "بۇ مەسىلىنى ھەل قىلىشىمىز ئۈچۈن support@signal.org گە كاشىلا ھەل قىلىش خاتىرىسىنى يوللاڭ.";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "بۇ مەسىلىنى ھەل قىلىشىمىز ئۈچۈن support@letKnow.com گە كاشىلا ھەل قىلىش خاتىرىسىنى يوللاڭ.";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal ئېچىلمىدى";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "يوچۇن ساندان نەشرى.";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal نى ئېچىشتا مەسىلە كۆرۈلدى. بۇ مەسىلىنى ھەل قىلىشقا ياردەم قىلىش ئۈچۈن، خاتالىق خاتىرىسىنى support@signal.org غا يوللاپ بېرىڭ.";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signal نى ئېچىشتا مەسىلە كۆرۈلدى. بۇ مەسىلىنى ھەل قىلىشقا ياردەم قىلىش ئۈچۈن، خاتالىق خاتىرىسىنى support@letKnow.com غا يوللاپ بېرىڭ.";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "Signal ئېچىلمىدى";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "ساقلاش بوشلۇقى ئاز";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "كونا ئەسكۈنىڭىزدىن يوللىغان سانلىق مەلۇماتنى ئەسلىگە كەلتۈرگىلى بولمىدى. support@signal.org غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.  ئەگەر Signal نى قايتا ئورناتسىڭىز ئۇچۇر تارىخىڭىزنى يوقىتىشىڭىز مۇمكىن.";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "كونا ئەسكۈنىڭىزدىن يوللىغان سانلىق مەلۇماتنى ئەسلىگە كەلتۈرگىلى بولمىدى. support@letKnow.com غا سازلاش خاتىرىسى ئەۋەتىپ بۇ كاشىلىنى ھەل قىلىشىمىزغا ياردەم قىلىڭ.  ئەگەر Signal نى قايتا ئورناتسىڭىز ئۇچۇر تارىخىڭىزنى يوقىتىشىڭىز مۇمكىن.";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "يۆتكەشنى تاماملىيالمىدى.";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "‫Signal دا پاراڭلىشايلى";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "ئۈسكۈنىڭىزدە ئېلخەت يوللاش تەڭشىكى سەپلەنمىگەن. ياردەم ئىلتىماسى يوللاش ئۈچۈن، ئۈسكۈنىڭىزدە تورخەتنى تەڭشەڭ ياكى support@signal.org غا ئېلخەت يوللاڭ";
+"EMAIL_SIGNAL_MESSAGE" = "ئۈسكۈنىڭىزدە ئېلخەت يوللاش تەڭشىكى سەپلەنمىگەن. ياردەم ئىلتىماسى يوللاش ئۈچۈن، ئۈسكۈنىڭىزدە تورخەتنى تەڭشەڭ ياكى support@letKnow.com غا ئېلخەت يوللاڭ";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "ئېلخەت يوق";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "تور خاتالىقى";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "ئۈسكۈنىڭىزدىكى كاشىلا بىر تەرەپ قىلىش خاتىرىسى ۋە بۇ خاتالىق دوكىلاتىنى support@signal.org گە يوللاپ، Signal نى ياخشىلىشىمىزغا ياردەم بېرىڭ. %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "ئۈسكۈنىڭىزدىكى كاشىلا بىر تەرەپ قىلىش خاتىرىسى ۋە بۇ خاتالىق دوكىلاتىنى support@letKnow.com گە يوللاپ، Signal نى ياخشىلىشىمىزغا ياردەم بېرىڭ. %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal سىناق نەشرى: خاتالىق كۆرۈلدى";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "بۇ مەسىلە ھەققىدە بىرگە سۆزلەپ بېرىڭ: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "قوللاش ئىلتىماسىڭىزنى support@signal.orgگە ئېلخەت سېلىڭ";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "قوللاش ئىلتىماسىڭىزنى support@letKnow.comگە ئېلخەت سېلىڭ";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "سۈزگۈچ: %1$@";

@@ -215,13 +215,13 @@
 "APP_EXPIRED_BOTTOM_UPDATE" = "今すぐアップデート";
 
 /* Default message for the 'app launch failed' alert. */
-"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signalを起動できません。解決のため、デバッグログを support@signal.org にお送りください。";
+"APP_LAUNCH_FAILURE_ALERT_MESSAGE" = "Signalを起動できません。解決のため、デバッグログを support@letKnow.com にお送りください。";
 
 /* Button to try launching the app even though the last launch failed */
 "APP_LAUNCH_FAILURE_CONTINUE" = "Open Signal Instead";
 
 /* Message for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
-"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "解決のため、デバッグログを support@signal.org にお送りください。";
+"APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_MESSAGE" = "解決のため、デバッグログを support@letKnow.com にお送りください。";
 
 /* Title for an error indicating that the app couldn't launch because some unexpected error happened with the user's registration status. */
 "APP_LAUNCH_FAILURE_CORRUPT_REGISTRATION_TITLE" = "Signal を開けませんでした";
@@ -245,7 +245,7 @@
 "APP_LAUNCH_FAILURE_INVALID_DATABASE_VERSION_TITLE" = "データベースのバージョンが不明です。";
 
 /* Error indicating that the app crashed during the previous launch. */
-"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signalの起動時に問題が発生しました。解決のためにデバッグログをsupport@signal.orgにお送りください。";
+"APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_MESSAGE" = "Signalの起動時に問題が発生しました。解決のためにデバッグログをsupport@letKnow.comにお送りください。";
 
 /* Error indicating that the app crashed during the previous launch. */
 "APP_LAUNCH_FAILURE_LAST_LAUNCH_CRASHED_TITLE" = "前回起動時にSignalがクラッシュしました";
@@ -257,7 +257,7 @@
 "APP_LAUNCH_FAILURE_LOW_STORAGE_SPACE_AVAILABLE_TITLE" = "ストレージ容量が不足しています。";
 
 /* Error indicating that the app could not restore transferred data. */
-"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "旧端末から移行したデータを復元できませんでした。原因を調査するため、デバッグログを support@signal.org に送ってください。Signalを再インストールすると、メッセージ履歴が消える可能性があります。";
+"APP_LAUNCH_FAILURE_RESTORE_FAILED_MESSAGE" = "旧端末から移行したデータを復元できませんでした。原因を調査するため、デバッグログを support@letKnow.com に送ってください。Signalを再インストールすると、メッセージ履歴が消える可能性があります。";
 
 /* Error indicating that the app could not restore transferred data. */
 "APP_LAUNCH_FAILURE_RESTORE_FAILED_TITLE" = "移行を完了できませんでした";
@@ -3386,7 +3386,7 @@
 "EMAIL_INVITE_SUBJECT" = "メッセージアプリをSignalにしましょう";
 
 /* Description for the fallback support sheet if user cannot send email */
-"EMAIL_SIGNAL_MESSAGE" = "この端末はメールを送信できるようになっていません。サポートリクエストを送るには、この端末でメールを設定するか、support@signal.org にメールしてください。";
+"EMAIL_SIGNAL_MESSAGE" = "この端末はメールを送信できるようになっていません。サポートリクエストを送るには、この端末でメールを設定するか、support@letKnow.com にメールしてください。";
 
 /* Title for the fallback support sheet if user cannot send email */
 "EMAIL_SIGNAL_TITLE" = "メール利用不可";
@@ -3557,7 +3557,7 @@
 "ERROR_NETWORK_FAILURE" = "ネットワークエラー";
 
 /* Format string for an error alert notification message. Embeds {{ error string }} */
-"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "このエラーとあなたの端末のデバッグログを support@signal.org に報告して、Signalの改善にご協力ください; %1$@";
+"ERROR_NOTIFICATION_MESSAGE_FORMAT" = "このエラーとあなたの端末のデバッグログを support@letKnow.com に報告して、Signalの改善にご協力ください; %1$@";
 
 /* Format string for an error alert notification title. */
 "ERROR_NOTIFICATION_TITLE" = "Signal Beta: エラーが発生しました";
@@ -9518,7 +9518,7 @@
 "SUPPORT_EMAIL_DEFAULT_DESCRIPTION" = "この問題について教えてください: ";
 
 /* Message for alert dialog presented when a support email failed to send */
-"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "サポートリクエストを support@signal.org へメールしてください。";
+"SUPPORT_EMAIL_ERROR_ALERT_DESCRIPTION" = "サポートリクエストを support@letKnow.com へメールしてください。";
 
 /* Localized label for support request email filter string. Embeds {{filter text}}. */
 "SUPPORT_EMAIL_FILTER_LABEL_FORMAT" = "フィルタ: %1$@";
