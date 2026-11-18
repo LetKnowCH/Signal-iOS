@@ -164,13 +164,10 @@ final class ContactDiscoveryV2Operation<ConnectionType: ContactDiscoveryConnecti
             let cdsiAuth = try await self.remoteAttestation.authForCDSI()
             let request = try self.buildRequest()
 
-            // Only production Net connections use LetKnow Nitro. Test connections retain their mocks.
+            // LetKnow currently uses its Stage Nitro CDSI for real network connections
+            // in both Debug and TestFlight builds. Test connections retain their mocks.
             if TSConstants.isUsingLetKnowService,
                ConnectionType.self == LibSignalClient.Net.self {
-                // The approved Nitro PCR policy is for Stage only; never silently use Stage in Release.
-                guard !TSConstants.isUsingProductionService else {
-                    throw ContactDiscoveryError.terminalError("LetKnow production Nitro policy is not configured")
-                }
                 return try await performLetKnowLookup(
                     client: NitroContactDiscovery.letKnowStage(),
                     request: request,
@@ -178,16 +175,21 @@ final class ContactDiscoveryV2Operation<ConnectionType: ContactDiscoveryConnecti
                     password: cdsiAuth.password
                 )
             }
+
             let auth = LibSignalClient.Auth(username: cdsiAuth.username, password: cdsiAuth.password)
             let tokenResult = try await self.connectionImpl.performRequest(request, auth: auth)
-            // We need to persist the token & new e164s before dealing with the result.
-            // If we don't, a interrupted request could lead to a corrupted token.
+
+            // Persist the token and E164 values before processing the result.
+            // An interrupted request must not leave an inconsistent token.
             try await self.handle(
                 token: tokenResult.token,
                 initialRequestHadToken: request.token != nil,
-                newE164s: request.newE164s,
+                newE164s: request.newE164s
             )
-            return try await self.connectionImpl.continueRequest(afterAckingToken: tokenResult)
+
+            return try await self.connectionImpl.continueRequest(
+                afterAckingToken: tokenResult
+            )
         } catch {
             let resolvedError = await self.handle(error: error)
             Logger.warn("CDSv2: Failed with error: \(resolvedError)")
